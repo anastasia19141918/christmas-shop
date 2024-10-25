@@ -1,0 +1,15 @@
+.header__itemns {
+  display: flex;
+  flex-direction: row;
+};
+
+.itemn__link {
+  padding: 0 0 0 4.5rem;
+  text-transform: uppercase;
+  color: $color-main-backrgaund;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  line-height: 130%;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}

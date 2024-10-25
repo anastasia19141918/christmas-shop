@@ -1,3 +1,17 @@
 @import './normalize.css';
+/* montserrat-400 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  src: url("../../src/fonts/montserrat-v26-latin-400.woff2") format("woff2");
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  src: url("../../src/fonts/montserrat-v26-latin-600.woff2") format("woff2");
+}
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,16 @@
+.header__icon:hover {
+  background-color: hsla(195, 56%, 62%, 0.6);
+  transition: 0.5s ease-in-out;
+  border-radius: 5px;
+  border: 1px dotted $color-tag-green;
+};
+
+.header__itemn:hover {
+  background-color: hsl(0, 100%, 95%);
+  transition: 0.5s ease-in-out;
+};
+
+.itemn__link:hover {
+  color: $color-main;
+  transition: 0.5s ease-in-out;
+}

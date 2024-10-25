@@ -1,5 +1,5 @@
 .header {
-  padding: 20px 0px;
+  padding: 15px 0px;
   background-color: $color-static;
 };
 
@@ -8,14 +8,19 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
+};
+
+
 
 .header__icon {
+  width: 120px;
+  padding: 5px 0 5px 5px;
+  transition: 0.5s ease-in-out;
   display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
-  gap: 0px 10px;
+  gap: 0px 7px;
 };
 
 .header__link {

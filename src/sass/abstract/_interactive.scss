@@ -2,7 +2,6 @@
   background-color: hsla(195, 56%, 62%, 0.6);
   transition: 0.5s ease-in-out;
   border-radius: 5px;
-  border: 1px dotted $color-tag-green;
 };
 
 .header__itemn:hover {
@@ -12,5 +11,11 @@
 
 .itemn__link:hover {
   color: $color-main;
+  transition: 0.5s ease-in-out;
+};
+
+.hero__btn:hover {
+  color: $color-main-backrgaund;
+  background-color: $color-static;
   transition: 0.5s ease-in-out;
 }

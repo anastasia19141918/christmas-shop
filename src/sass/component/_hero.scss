@@ -1,0 +1,61 @@
+.hero {
+  padding: 120px;
+  background-image: url('../../src/img/hero/bg-ball.png'), url('../../src/img/hero/bg-snow.png');
+  background-repeat: no-repeat;
+  background-size: 100% 110%;
+  background-position: 100% 60%;
+};
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.hero__text {
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-family: 'Allura';
+  font-size: 2.4rem;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  color: $color-static;
+};
+
+.hero__title {
+  max-width: 425px;
+  margin: 0 0 13px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 5.5px;
+  color: $color-static;
+};
+
+.hero__button {
+  margin: 0 0 15px 0;
+}
+
+.hero__btn {
+  width: 235px;
+  padding: 20px 10px;
+  border-radius: 20px;
+
+  border: none;
+  color: $color-static;
+  background-color: $color-main-backrgaund;
+
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+};

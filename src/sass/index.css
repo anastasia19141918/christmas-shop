@@ -13,11 +13,18 @@
   font-style: normal;
   src: url("../../src/fonts/montserrat-v26-latin-600.woff2") format("woff2");
 }
+/* allura-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Allura";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../src/fonts/allura-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 .header__icon:hover {
   background-color: hsla(195, 56%, 62%, 0.6);
   transition: 0.5s ease-in-out;
   border-radius: 5px;
-  border: 1px dotted #06A44F;
 }
 
 .header__itemn:hover {
@@ -27,6 +34,12 @@
 
 .itemn__link:hover {
   color: #FF4646;
+  transition: 0.5s ease-in-out;
+}
+
+.hero__btn:hover {
+  color: #181C29;
+  background-color: #FFFFFF;
   transition: 0.5s ease-in-out;
 }
 
@@ -45,6 +58,10 @@ ul {
 
 li {
   list-style-type: none;
+}
+
+h1, h2, h3 {
+  margin: 0;
 }
 
 .tag {
@@ -100,6 +117,11 @@ li {
   letter-spacing: 0.6px;
 }
 
+.main__bacgraund {
+  background-color: #FF4646;
+  border-radius: 20px;
+}
+
 .header__itemns {
   display: flex;
   flex-direction: row;
@@ -120,6 +142,65 @@ li {
   line-height: 130%;
   font-weight: 600;
   letter-spacing: 0.1rem;
+  transition: 0.5s ease-in-out;
+}
+
+.hero {
+  padding: 120px;
+  background-image: url("../../src/img/hero/bg-ball.png"), url("../../src/img/hero/bg-snow.png");
+  background-repeat: no-repeat;
+  background-size: 100% 110%;
+  background-position: 100% 60%;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.hero__text {
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-family: "Allura";
+  font-size: 2.4rem;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  color: #FFFFFF;
+}
+
+.hero__title {
+  max-width: 425px;
+  margin: 0 0 13px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 5.5px;
+  color: #FFFFFF;
+}
+
+.hero__button {
+  margin: 0 0 15px 0;
+}
+
+.hero__btn {
+  width: 235px;
+  padding: 20px 10px;
+  border-radius: 20px;
+  border: none;
+  color: #FFFFFF;
+  background-color: #181C29;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.5px;
+  cursor: pointer;
   transition: 0.5s ease-in-out;
 }
 

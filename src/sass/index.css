@@ -47,6 +47,11 @@
   transition: 0.5s ease-in-out;
 }
 
+.slaider__dot:hover {
+  color: #FF4646;
+  background-color: #FFFFFF;
+}
+
 html {
   font-size: 10px;
 }
@@ -269,6 +274,87 @@ h1, h2, h3, p {
 
 .about__pic {
   border-radius: 20px;
+}
+
+.slaider {
+  padding: 66px 0px;
+}
+
+.slaider__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.slaider__text {
+  margin-bottom: 20px;
+  font-family: "Montserrat";
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.slaider__gallery {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 0 6%;
+  gap: 0 25px;
+  overflow: hidden;
+}
+
+.slaider__item_title {
+  font-family: "Montserrat";
+  font-size: 8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.slaider__item {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  gap: 0px 15px;
+}
+
+.slaider__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.wrapper__dots {
+  padding-right: 5.5%;
+}
+
+.slaider__dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 0px 20px;
+}
+
+.slaider__dot {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 1px solid hsla(195, 56%, 62%, 0.6);
+  border-radius: 20px;
+  color: hsla(195, 56%, 62%, 0.6);
+  font-size: 3rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
 
 /*# sourceMappingURL=index.css.map */

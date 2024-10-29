@@ -22,4 +22,9 @@
 .hero__link:hover {
   color: $color-main-backrgaund;
   transition: 0.5s ease-in-out;
+};
+
+.slaider__dot:hover {
+  color: $color-main;
+  background-color: $color-static;
 }

@@ -90,6 +90,15 @@ h1, h2, h3, p {
   color: #FFFFFF;
 }
 
+.text__section {
+  font-family: "Montserrat";
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
 .tag {
   display: block;
   width: 24px;
@@ -255,12 +264,6 @@ h1, h2, h3, p {
 
 .about__title {
   margin-bottom: 20px;
-  font-family: "Montserrat";
-  font-size: 2.4rem;
-  font-weight: 600;
-  line-height: 152%;
-  letter-spacing: 4px;
-  text-transform: uppercase;
 }
 
 .about__text {
@@ -290,12 +293,6 @@ h1, h2, h3, p {
 
 .slaider__text {
   margin-bottom: 20px;
-  font-family: "Montserrat";
-  font-size: 2.4rem;
-  font-weight: 600;
-  line-height: 152%;
-  letter-spacing: 4px;
-  text-transform: uppercase;
   color: #FFFFFF;
 }
 

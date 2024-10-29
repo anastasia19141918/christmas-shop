@@ -1,9 +1,6 @@
 .hero {
   padding: 120px;
   background-image: url('../../src/img/hero/bg-ball.png'), url('../../src/img/hero/bg-snow.png');
-  background-repeat: no-repeat;
-  background-size: 100% 110%;
-  background-position: 100% 60%;
 };
 
 .hero__wrapper {
@@ -12,16 +9,6 @@
   text-align: center;
   align-items: center;
 }
-
-.hero__text {
-  margin: 0 0 10px 0;
-  text-align: center;
-  font-family: 'Allura';
-  font-size: 2.4rem;
-  line-height: 100%;
-  letter-spacing: 1.2px;
-  color: $color-static;
-};
 
 .hero__title {
   max-width: 425px;
@@ -46,7 +33,6 @@
   border-radius: 20px;
 
   border: none;
-  color: $color-static;
   background-color: $color-main-backrgaund;
 
   text-transform: uppercase;
@@ -59,3 +45,8 @@
   cursor: pointer;
   transition: 0.5s ease-in-out;
 };
+
+.hero__link {
+  color: $color-static;
+  transition: 0.5s ease-in-out;
+}

@@ -38,8 +38,12 @@
 }
 
 .hero__btn:hover {
-  color: #181C29;
   background-color: #FFFFFF;
+  transition: 0.5s ease-in-out;
+}
+
+.hero__link:hover {
+  color: #181C29;
   transition: 0.5s ease-in-out;
 }
 
@@ -60,8 +64,25 @@ li {
   list-style-type: none;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
   margin: 0;
+}
+
+.bg {
+  background: url("../../src/img/hero/bg-snow.png");
+  background-repeat: no-repeat;
+  background-size: 100% 110%;
+  background-position: 100% 60%;
+}
+
+.text {
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-family: "Allura";
+  font-size: 2.4rem;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  color: #FFFFFF;
 }
 
 .tag {
@@ -148,9 +169,6 @@ h1, h2, h3 {
 .hero {
   padding: 120px;
   background-image: url("../../src/img/hero/bg-ball.png"), url("../../src/img/hero/bg-snow.png");
-  background-repeat: no-repeat;
-  background-size: 100% 110%;
-  background-position: 100% 60%;
 }
 
 .hero__wrapper {
@@ -158,16 +176,6 @@ h1, h2, h3 {
   flex-direction: column;
   text-align: center;
   align-items: center;
-}
-
-.hero__text {
-  margin: 0 0 10px 0;
-  text-align: center;
-  font-family: "Allura";
-  font-size: 2.4rem;
-  line-height: 100%;
-  letter-spacing: 1.2px;
-  color: #FFFFFF;
 }
 
 .hero__title {
@@ -192,7 +200,6 @@ h1, h2, h3 {
   padding: 20px 10px;
   border-radius: 20px;
   border: none;
-  color: #FFFFFF;
   background-color: #181C29;
   text-transform: uppercase;
   font-family: "Montserrat";
@@ -202,6 +209,66 @@ h1, h2, h3 {
   letter-spacing: 0.5px;
   cursor: pointer;
   transition: 0.5s ease-in-out;
+}
+
+.hero__link {
+  color: #FFFFFF;
+  transition: 0.5s ease-in-out;
+}
+
+.about {
+  padding: 50px 0px;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px 40px;
+}
+
+.about__desk {
+  max-width: 480px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 11% 60px 40px 60px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+
+.about__inf {
+  display: flex;
+  flex-direction: column;
+}
+
+.text_about {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #FF4646;
+}
+
+.about__title {
+  margin-bottom: 20px;
+  font-family: "Montserrat";
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  width: 460px;
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 148%;
+  letter-spacing: 0.6px;
+}
+
+.about__pic {
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */

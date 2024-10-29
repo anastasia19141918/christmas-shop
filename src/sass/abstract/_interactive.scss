@@ -15,7 +15,11 @@
 };
 
 .hero__btn:hover {
-  color: $color-main-backrgaund;
   background-color: $color-static;
+  transition: 0.5s ease-in-out;
+};
+
+.hero__link:hover {
+  color: $color-main-backrgaund;
   transition: 0.5s ease-in-out;
 }

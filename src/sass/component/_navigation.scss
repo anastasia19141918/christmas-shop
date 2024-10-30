@@ -1,0 +1,25 @@
+
+
+.header__itemns {
+  display: flex;
+  flex-direction: row;
+  gap: 0 35px;
+};
+
+.header__itemn {
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+};
+
+.itemn__link {
+  text-transform: uppercase;
+  color: $color-main-backrgaund;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  line-height: 130%;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+
+  transition: 0.5s ease-in-out;
+}

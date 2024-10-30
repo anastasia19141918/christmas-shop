@@ -1,0 +1,32 @@
+.wrapper__dots {
+  padding-right: 5.5%;
+}
+
+.slaider__dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 0px 20px;
+};
+
+.slaider__dot {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  border: 1px solid hsla(195, 56%, 62%, 0.6);
+  border-radius: 20px;
+  color: hsla(195, 56%, 62%, 0.6);
+  font-size: 3.0rem;
+  font-weight: 600;
+  
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+};
+
+.text__section {
+  
+}

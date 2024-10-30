@@ -1,0 +1,48 @@
+.best-gifts {
+  padding: 56px 0px 0px 0px;
+};
+
+.best-gifts__title {
+  margin-bottom: 20px;
+  color: $color-static;
+  text-align: center;
+};
+
+.best-gifts_gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 11px;
+};
+
+.best-gifts_itemn {
+  max-width: 310px;
+  padding: 0 0 20px 0;
+  background-color: $color-static;
+  border-radius: 20px;
+  
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+};
+
+.best-gifts_img {
+  width: 310px;
+  height: 230px;
+  margin-bottom: 16px
+};
+
+.best-gifts_desk {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 20px;
+}
+
+.best-gifts_text {
+  font-family: 'Montserrat';
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

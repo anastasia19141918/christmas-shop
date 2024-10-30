@@ -1,0 +1,48 @@
+html {
+  font-size: 10px;
+};
+
+a {
+  text-decoration: none;
+};
+
+ul {
+  padding: 0;
+  margin: 0;
+};
+
+li {
+  list-style-type: none;
+};
+
+h1, h2, h3, h4, p {
+  margin: 0;
+};
+
+.bg {
+  background:  url('../../src/img/hero/bg-snow.png');
+  background-repeat: no-repeat;
+  background-size: 100% 110%;
+  background-position: 100% 60%;
+};
+.card_title {
+  margin-bottom: 10px;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  &_work {
+    color: $color-tag-purple;
+  };
+  &_health {
+    color: $color-tag-green;
+  };
+  &_harmony {
+    color: $color-tag-pink;
+  }
+};
+
+
+

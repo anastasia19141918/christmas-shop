@@ -1,0 +1,489 @@
+@import './normalize.css';
+/* montserrat-400 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  src: url("../../src/fonts/montserrat-v26-latin-400.woff2") format("woff2");
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  src: url("../../src/fonts/montserrat-v26-latin-600.woff2") format("woff2");
+}
+/* allura-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Allura";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../src/fonts/allura-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.header__icon:hover {
+  background-color: hsla(195, 56%, 62%, 0.6);
+  transition: 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+.header__itemn:hover {
+  background-color: hsl(0, 100%, 95%);
+  transition: 0.5s ease-in-out;
+}
+
+.itemn__link:hover {
+  color: #FF4646;
+  transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #FFFFFF;
+  transition: 0.5s ease-in-out;
+  color: #181C29;
+}
+
+.link:hover {
+  color: #181C29;
+  transition: 0.5s ease-in-out;
+}
+
+.slaider__dot:hover {
+  color: #FF4646;
+  background-color: #FFFFFF;
+}
+
+.best-gifts_itemn:hover {
+  color: #FF4646;
+  transition: 0.5s ease-in-out;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+.bg {
+  background: url("../../src/img/hero/bg-snow.png");
+  background-repeat: no-repeat;
+  background-size: 100% 110%;
+  background-position: 100% 60%;
+}
+
+.card_title {
+  margin-bottom: 10px;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+.card_title_work {
+  color: #4361FF;
+}
+.card_title_health {
+  color: #06A44F;
+}
+.card_title_harmony {
+  color: #FF43F7;
+}
+
+.tag {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+.tag__icon {
+  background-image: url("../../src/img/header/home-icon.png");
+}
+
+.button {
+  margin: 0 0 15px 0;
+}
+
+.btn {
+  width: 235px;
+  padding: 20px 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #181C29;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.link {
+  color: #FFFFFF;
+  transition: 0.5s ease-in-out;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.wrapper__block {
+  padding: 0 13.7rem;
+}
+
+.header {
+  padding: 15px 0px;
+  background-color: #FFFFFF;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__icon {
+  width: 120px;
+  padding: 5px 0 5px 5px;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  gap: 0px 7px;
+}
+
+.header__link {
+  text-transform: uppercase;
+  color: #181C29;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  line-height: 152%;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+
+.main__bacgraund {
+  background-color: #FF4646;
+  border-radius: 20px;
+}
+
+.text {
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-family: "Allura";
+  font-size: 2.4rem;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  color: #FFFFFF;
+}
+
+.text__section {
+  font-family: "Montserrat";
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.header__itemns {
+  display: flex;
+  flex-direction: row;
+  gap: 0 35px;
+}
+
+.header__itemn {
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+.itemn__link {
+  text-transform: uppercase;
+  color: #181C29;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  line-height: 130%;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  transition: 0.5s ease-in-out;
+}
+
+.hero {
+  padding: 120px;
+  background-image: url("../../src/img/hero/bg-ball.png"), url("../../src/img/hero/bg-snow.png");
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.hero__title {
+  max-width: 425px;
+  margin: 0 0 13px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 5.5px;
+  color: #FFFFFF;
+}
+
+.about {
+  padding: 50px 0px;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px 40px;
+}
+
+.about__desk {
+  max-width: 480px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 11% 60px 40px 60px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+
+.about__inf {
+  display: flex;
+  flex-direction: column;
+}
+
+.text_about {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #FF4646;
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.about__text {
+  width: 460px;
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 148%;
+  letter-spacing: 0.6px;
+}
+
+.about__pic {
+  border-radius: 20px;
+}
+
+.slaider {
+  padding: 66px 0px;
+}
+
+.slaider__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.slaider__text {
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.slaider__gallery {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 0 6%;
+  gap: 0 25px;
+  overflow: hidden;
+}
+
+.slaider__item_title {
+  font-family: "Montserrat";
+  font-size: 8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.slaider__item {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  gap: 0px 15px;
+}
+
+.slaider__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.wrapper__dots {
+  padding-right: 5.5%;
+}
+
+.slaider__dots {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 0px 20px;
+}
+
+.slaider__dot {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 1px solid hsla(195, 56%, 62%, 0.6);
+  border-radius: 20px;
+  color: hsla(195, 56%, 62%, 0.6);
+  font-size: 3rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.best-gifts {
+  padding: 56px 0px 0px 0px;
+}
+
+.best-gifts__title {
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.best-gifts_gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 11px;
+}
+
+.best-gifts_itemn {
+  max-width: 310px;
+  padding: 0 0 20px 0;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.best-gifts_img {
+  width: 310px;
+  height: 230px;
+  margin-bottom: 16px;
+}
+
+.best-gifts_desk {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 20px;
+}
+
+.best-gifts_text {
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.gta {
+  padding: 16.5% 0px 10% 0px;
+  background-image: url("../../src/img/CTA/bg-forest.png"), url("../../src/img/hero/bg-snow.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 100% 80%;
+}
+
+.wrapper__gta {
+  display: grid;
+  justify-content: center;
+}
+
+.text__gta {
+  max-width: 426px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.gta__button {
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.gta__timer_container {
+  display: flex;
+  justify-content: center;
+}
+
+.gta__timer {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 30px;
+  justify-content: center;
+  gap: 0 10px;
+  background-color: hsla(0, 0%, 80%, 0.5);
+  border-radius: 20px;
+}
+
+.text__section_time {
+  color: #FFFFFF;
+}
+
+.gta__time {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.gta__line {
+  width: 1px;
+  height: 20px;
+  margin: 20px 0px 0px 0px;
+  background-color: hsla(0, 0%, 80%, 0.8);
+}
+
+/*# sourceMappingURL=index.css.map */

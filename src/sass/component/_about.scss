@@ -1,0 +1,50 @@
+.about {
+  padding: 50px 0px;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px 40px;
+};
+
+.about__desk {
+  max-width: 480px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 11% 60px 40px 60px;
+  
+  background-color: $color-static;
+  border-radius: 20px;
+};
+
+.about__inf {
+  display: flex;
+  flex-direction: column;
+};
+
+.text_about {
+  text-align: left;
+  margin-bottom: 20px;
+  color: $color-main;
+};
+
+.about__title {
+  margin-bottom: 20px;
+};
+
+.about__text {
+  width: 460px;
+  font-family: 'Montserrat';
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 148%;
+  letter-spacing: 0.6px;
+}
+
+.about__pic {
+  border-radius: 20px;
+};
+

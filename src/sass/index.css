@@ -86,6 +86,25 @@ h1, h2, h3, h4, p {
   background-position: 100% 60%;
 }
 
+.card_title {
+  margin-bottom: 10px;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+.card_title_work {
+  color: #4361FF;
+}
+.card_title_health {
+  color: #06A44F;
+}
+.card_title_harmony {
+  color: #FF43F7;
+}
+
 .tag {
   display: block;
   width: 24px;
@@ -399,25 +418,6 @@ h1, h2, h3, h4, p {
   padding: 0 0 0 20px;
 }
 
-.best-gifts_title {
-  margin-bottom: 10px;
-  font-family: "Montserrat";
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 130%;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-}
-.best-gifts_title_work {
-  color: #4361FF;
-}
-.best-gifts_title_health {
-  color: #06A44F;
-}
-.best-gifts_title_harmony {
-  color: #FF43F7;
-}
-
 .best-gifts_text {
   font-family: "Montserrat";
   font-size: 1.6rem;
@@ -428,7 +428,11 @@ h1, h2, h3, h4, p {
 }
 
 .gta {
-  padding: 16.5% 0px 0px 0px;
+  padding: 16.5% 0px 10% 0px;
+  background-image: url("../../src/img/CTA/bg-forest.png"), url("../../src/img/hero/bg-snow.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 100% 80%;
 }
 
 .wrapper__gta {
@@ -441,6 +445,45 @@ h1, h2, h3, h4, p {
   margin-bottom: 20px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.gta__button {
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.gta__timer_container {
+  display: flex;
+  justify-content: center;
+}
+
+.gta__timer {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 30px;
+  justify-content: center;
+  gap: 0 10px;
+  background-color: hsla(0, 0%, 80%, 0.5);
+  border-radius: 20px;
+}
+
+.text__section_time {
+  color: #FFFFFF;
+}
+
+.gta__time {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.gta__line {
+  width: 1px;
+  height: 20px;
+  margin: 20px 0px 0px 0px;
+  background-color: hsla(0, 0%, 80%, 0.8);
 }
 
 /*# sourceMappingURL=index.css.map */

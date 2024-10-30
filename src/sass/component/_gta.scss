@@ -1,5 +1,9 @@
 .gta {
-  padding: 16.5% 0px 0px 0px;
+  padding: 16.5% 0px 10% 0px;
+  background-image: url('../../src/img/CTA/bg-forest.png'), url('../../src/img/hero/bg-snow.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 100% 80%;
 };
 
 .wrapper__gta {
@@ -12,4 +16,45 @@
   margin-bottom: 20px;
   text-align: center;
   color: $color-static;
+};
+
+.gta__button {
+  margin: 0 0 20px 0;
+  text-align: center;
+};
+
+//timer
+
+.gta__timer_container {
+  display: flex;
+  justify-content: center;
+};
+
+.gta__timer {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 30px;
+  justify-content: center;
+  gap: 0 10px;
+  background-color: hsl(0, 0%, 80%, 0.5);
+  border-radius: 20px;
+};
+
+.text__section_time {
+  color: $color-static;
+};
+
+.gta__time {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center
+};
+
+.gta__line {
+  width: 1px;
+  height: 20px;
+  margin: 20px 0px 0px 0px;
+  background-color: hsl(0, 0%, 80%, 0.8);
 };

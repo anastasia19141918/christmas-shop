@@ -38,25 +38,6 @@
   padding: 0 0 0 20px;
 }
 
-.best-gifts_title {
-  margin-bottom: 10px;
-  font-family: 'Montserrat';
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 130%;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  &_work {
-    color: $color-tag-purple;
-  };
-  &_health {
-    color: $color-tag-green;
-  };
-  &_harmony {
-    color: $color-tag-pink;
-  }
-};
-
 .best-gifts_text {
   font-family: 'Montserrat';
   font-size: 1.6rem;

@@ -13,8 +13,11 @@
 @import'layouts/header';
 @import'layouts/main';
 
+@import'component/text';
 @import'component/navigation';
 @import'component/hero';
 @import'component/about';
 @import'component/slaider';
 @import'component/dots';
+@import'component/best-gifts.scss';
+

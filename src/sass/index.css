@@ -40,6 +40,7 @@
 .hero__btn:hover {
   background-color: #FFFFFF;
   transition: 0.5s ease-in-out;
+  color: #181C29;
 }
 
 .hero__link:hover {
@@ -50,6 +51,11 @@
 .slaider__dot:hover {
   color: #FF4646;
   background-color: #FFFFFF;
+}
+
+.best-gifts_itemn:hover {
+  color: #FF4646;
+  transition: 0.5s ease-in-out;
 }
 
 html {
@@ -69,7 +75,7 @@ li {
   list-style-type: none;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
   margin: 0;
 }
 
@@ -78,25 +84,6 @@ h1, h2, h3, p {
   background-repeat: no-repeat;
   background-size: 100% 110%;
   background-position: 100% 60%;
-}
-
-.text {
-  margin: 0 0 10px 0;
-  text-align: center;
-  font-family: "Allura";
-  font-size: 2.4rem;
-  line-height: 100%;
-  letter-spacing: 1.2px;
-  color: #FFFFFF;
-}
-
-.text__section {
-  font-family: "Montserrat";
-  font-size: 2.4rem;
-  font-weight: 600;
-  line-height: 152%;
-  letter-spacing: 4px;
-  text-transform: uppercase;
 }
 
 .tag {
@@ -155,6 +142,25 @@ h1, h2, h3, p {
 .main__bacgraund {
   background-color: #FF4646;
   border-radius: 20px;
+}
+
+.text {
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-family: "Allura";
+  font-size: 2.4rem;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  color: #FFFFFF;
+}
+
+.text__section {
+  font-family: "Montserrat";
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
 .header__itemns {
@@ -352,6 +358,73 @@ h1, h2, h3, p {
   font-weight: 600;
   cursor: pointer;
   transition: 0.5s ease-in-out;
+}
+
+.best-gifts {
+  padding: 56px 0px 0px 0px;
+}
+
+.best-gifts__title {
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.best-gifts_gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 11px;
+}
+
+.best-gifts_itemn {
+  max-width: 310px;
+  padding: 0 0 20px 0;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.best-gifts_img {
+  width: 310px;
+  height: 230px;
+  margin-bottom: 16px;
+}
+
+.best-gifts_desk {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 20px;
+}
+
+.best-gifts_title {
+  margin-bottom: 10px;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+.best-gifts_title_work {
+  color: #4361FF;
+}
+.best-gifts_title_health {
+  color: #06A44F;
+}
+.best-gifts_title_harmony {
+  color: #FF43F7;
+}
+
+.best-gifts_text {
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 152%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=index.css.map */

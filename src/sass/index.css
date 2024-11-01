@@ -140,9 +140,9 @@ h1, h2, h3, h4, p {
 
 .footer__icon {
   display: block;
-  width: 21px;
-  height: 21px;
-  background-size: 21px 21px;
+  width: 17px;
+  height: 17px;
+  background-size: 17px 17px;
 }
 .footer__icon_tel {
   background-image: url("../../src/img/footer/tel.png");

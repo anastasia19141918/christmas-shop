@@ -9,3 +9,18 @@
   }
 };
 
+.gifts__icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  background-size: 80px 80px;
+  &_tel {
+    background-image: url('../../src/img/Gifts/gifts-img_1.png');
+  };
+  &_magic {
+    background-image: url('../../src/img/Gifts/gifts-img_2.png');
+  };
+  &_mail {
+    background-image: url('../../src/img/Gifts/gifts-img_3.png');
+  }
+}

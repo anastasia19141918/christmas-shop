@@ -58,6 +58,11 @@
   transition: 0.5s ease-in-out;
 }
 
+.footer__link:hover {
+  transition: 0.5s ease-in-out;
+  color: #FF4646;
+}
+
 html {
   font-size: 10px;
 }
@@ -132,6 +137,25 @@ h1, h2, h3, h4, p {
   background-image: url("../../src/img/Gifts/gifts-img_3.png");
 }
 
+.footer__icon {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-size: 21px 21px;
+}
+.footer__icon_tel {
+  background-image: url("../../src/img/footer/tel.png");
+}
+.footer__icon_fes {
+  background-image: url("../../src/img/footer/fs.png");
+}
+.footer__icon_inst {
+  background-image: url("../../src/img/footer/inst.png");
+}
+.footer__icon_tw {
+  background-image: url("../../src/img/footer/tw.png");
+}
+
 .button {
   margin: 0 0 15px 0;
 }
@@ -202,6 +226,49 @@ h1, h2, h3, h4, p {
 .main__bacgraund {
   background-color: #FF4646;
   border-radius: 20px;
+}
+
+.footer {
+  padding: 2.5% 0 3% 0;
+}
+
+.wrapper__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__itemns {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 22px;
+  gap: 0px 30px;
+}
+
+.footer__icon {
+  max-width: 40px;
+  cursor: pointer;
+}
+
+.footer__text {
+  margin-bottom: 10px;
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 148%;
+}
+
+.footer__link {
+  text-align: center;
+  font-family: "Allura";
+  font-size: 2.4rem;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  color: #181C29;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
 }
 
 .text {

@@ -1,0 +1,42 @@
+.footer {
+  padding: 2.5% 0 3% 0;
+};
+
+.wrapper__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer__itemns {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 22px;
+  gap: 0px 30px;
+};
+
+.footer__icon {
+  max-width: 40px;
+  cursor: pointer;
+};
+
+.footer__text {
+  margin-bottom: 10px;
+  font-family: 'Montserrat';
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 148%;
+};
+
+.footer__link {
+  text-align: center;
+  font-family: 'Allura';
+  font-size: 2.4rem;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  color: $color-main-backrgaund;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}

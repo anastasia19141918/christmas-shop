@@ -23,4 +23,23 @@
   &_mail {
     background-image: url('../../src/img/Gifts/gifts-img_3.png');
   }
+};
+
+.footer__icon {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-size: 21px 21px;
+  &_tel {
+    background-image: url('../../src/img/footer/tel.png');
+  };
+  &_fes {
+    background-image: url('../../src/img/footer/fs.png');
+  };
+  &_inst {
+    background-image: url('../../src/img/footer/inst.png');
+  };
+  &_tw {
+    background-image: url('../../src/img/footer/tw.png');
+  }
 }

@@ -163,7 +163,7 @@ h1, h2, h3, h4, p {
 
 .btn {
   width: 235px;
-  padding: 20px 10px;
+  padding: 20px 0px;
   border-radius: 20px;
   border: none;
   background-color: #181C29;
@@ -532,6 +532,8 @@ h1, h2, h3, h4, p {
 }
 
 .gta__button {
+  display: grid;
+  justify-content: center;
   margin: 0 0 20px 0;
   text-align: center;
 }

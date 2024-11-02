@@ -19,6 +19,8 @@
 };
 
 .gta__button {
+  display: grid;
+  justify-content: center;
   margin: 0 0 20px 0;
   text-align: center;
 };

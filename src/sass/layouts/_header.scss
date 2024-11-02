@@ -31,4 +31,20 @@
   line-height: 152%;
   font-weight: 400;
   letter-spacing: 0.6px;
+};
+
+//heder gifts
+
+.header__itemn_gifts {
+  background-color: hsl(0, 100%, 95%);
+};
+
+.itemn__link_gifts {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  line-height: 152%;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  color: $color-main;
 }

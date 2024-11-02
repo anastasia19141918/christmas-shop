@@ -1,0 +1,53 @@
+.gifts-galley {
+  padding: 4.2% 0;
+}
+
+.wrapper__gifts_gallery {
+  display: grid;
+  justify-items: center;
+};
+
+.wrapper__gifts_title {
+  margin-bottom: 20px;
+}
+
+.gifts-galley_btns {
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: row;
+  gap: 0 9px;
+};
+
+.gifts-galley_btn {
+  padding: 11px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: $color-static;
+  cursor: pointer;
+};
+
+.gifts-galley_btn_active {
+  background-color: hsla(0, 0%, 80%, 0.5);
+};
+
+.gallery__dg {
+  background:  url('../../src/img/gallery/bg-garland.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px 10px;
+};
+
+.gifts__main {
+  padding: 4% 0 2.4% 0;
+}

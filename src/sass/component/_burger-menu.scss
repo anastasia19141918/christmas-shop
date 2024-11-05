@@ -1,0 +1,39 @@
+.burger {
+  display: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  @include tablet-burger-menu {
+    display: block;
+    z-index: 7;
+    margin-top: 10px;
+  }
+};
+
+.burger_line {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: $color-main-backrgaund;
+  transition: 0.3s ease-in-out
+};
+
+.line-one {
+  top: 0;
+};
+
+.line-two {
+  bottom: 50%;
+};
+
+.burger__active .line-one {
+  transform:  translateY(4px) rotate(45deg);
+  
+  transition: 0.3s ease-in-out
+};
+
+.burger__active .line-two {
+  transform:  translateY(-4px) rotate(-45deg);
+  transition: 0.3s ease-in-out
+};

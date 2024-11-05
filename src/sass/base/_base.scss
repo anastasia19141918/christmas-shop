@@ -23,8 +23,10 @@ h1, h2, h3, h4, p {
 .bg {
   background:  url('../../src/img/hero/bg-snow.png');
   background-repeat: no-repeat;
-  background-size: 100% 110%;
-  background-position: 100% 60%;
+  background-size: cover;
+  background-position: cover;
+
+  
 };
 .card_title {
   margin-bottom: 10px;

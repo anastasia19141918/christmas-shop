@@ -1,0 +1,7 @@
+@mixin desktop-small {
+  @media(max-width: $desktop-small) { @content; } 
+};
+
+@mixin tablet-burger-menu {
+  @media (max-width: $tablet-burger-menu) {@content;}
+}

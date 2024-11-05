@@ -2,17 +2,39 @@
   background-color: hsla(195, 56%, 62%, 0.6);
   transition: 0.5s ease-in-out;
   border-radius: 5px;
+  @include desktop-small {
+    background-color: transparent;
+    border-radius: 0;
+  }
 };
 
 .header__itemn:hover {
   background-color: hsl(0, 100%, 95%);
   transition: 0.5s ease-in-out;
+  @include desktop-small {
+    background-color: transparent;
+  }
 };
 
 .itemn__link:hover {
   color: $color-main;
   transition: 0.5s ease-in-out;
+  @include desktop-small {
+    color: $color-main-backrgaund;
+  }
 };
+
+.header__itemn_gifts:hover {
+  @include desktop-small {
+    background-color: hsl(0, 100%, 95%);
+  }
+};
+
+.itemn__link_gifts:hover {
+  @include desktop-small {
+    color: $color-main;
+  }
+}
 
 .btn:hover {
   background-color: $color-static;

@@ -4,15 +4,21 @@
 };
 
 .header__wrapper {
+  padding: 0 13.7rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @include desktop-small {
+    padding: 0 4rem;
+  };
+ @include tablet-burger-menu {
+    padding: 0 2rem;
+ }
 };
 
-
-
 .header__icon {
+  z-index: 7;
   width: 120px;
   padding: 5px 0 5px 5px;
   transition: 0.5s ease-in-out;
@@ -47,4 +53,7 @@
   font-weight: 400;
   letter-spacing: 0.6px;
   color: $color-main;
+  @include tablet-burger-menu {
+    font-size: 2.4rem;
+  }
 }

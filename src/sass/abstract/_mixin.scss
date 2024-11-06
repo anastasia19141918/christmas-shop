@@ -34,6 +34,10 @@
   @media (max-width: $mobale-small) {@content;}
 };
 
+@mixin tablet-gifts {
+  @media (max-width: $tablet-gifts) {@content;}
+};
+
 @mixin mobale-small-about {
   @media (max-width: $mobale-small-about) {@content;}
 };

@@ -3,10 +3,12 @@
 }
 
 .about__wrapper {
+  padding: 0 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 0px 0px;
+  
 };
 
 .about__desk {
@@ -18,6 +20,13 @@
   
   background-color: $color-static;
   border-radius: 20px;
+
+  @include desktop-big {
+    max-width: 376px;
+  }
+  @include tablet-big {
+    max-width: 350px;
+  }
 };
 
 .about__inf {
@@ -29,10 +38,14 @@
   text-align: left;
   margin-bottom: 20px;
   color: $color-main;
+
 };
 
 .about__title {
   margin-bottom: 20px;
+  @include desktop-big {
+    max-width: 256px;
+  }
 };
 
 .about__text {
@@ -42,10 +55,26 @@
   font-weight: normal;
   line-height: 148%;
   letter-spacing: 0.6px;
+  @include desktop-big {
+    max-width: 256px;
+  }
+  @include tablet-big {
+    max-width: 220px;
+    line-height: 148%;
+    letter-spacing: 1px;
+  }
 }
 
 .about__pic {
   border-radius: 20px;
   object-fit: cover;
+  @include desktop-big {
+    max-width: 376px;
+    height: 528px;
+  };
+  @include tablet-big {
+    max-width: 350px;
+    height: 518px;
+  }
 };
 

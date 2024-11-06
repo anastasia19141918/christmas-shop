@@ -39,7 +39,7 @@
 .btn:hover {
   background-color: $color-static;
   transition: 0.5s ease-in-out;
-  @include tablet-burger-menu {
+  @include desktop-small {
     background-color: $color-main-backrgaund;
   }
 };
@@ -47,7 +47,7 @@
 .link:hover {
   color: $color-main-backrgaund;
   transition: 0.5s ease-in-out;
-  @include tablet-burger-menu {
+  @include desktop-small {
     color: $color-static;
   }
 };

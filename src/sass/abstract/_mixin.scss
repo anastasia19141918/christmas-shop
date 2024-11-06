@@ -1,7 +1,27 @@
+@mixin desktop-big {
+  @media(max-width: $desktop-big) { @content; } 
+};
+
 @mixin desktop-small {
   @media(max-width: $desktop-small) { @content; } 
 };
 
+@mixin tablet-big {
+  @media(max-width: $tablet-big) { @content; } 
+};
+
 @mixin tablet-burger-menu {
   @media (max-width: $tablet-burger-menu) {@content;}
-}
+};
+
+@mixin mobale-big {
+  @media (max-width: $mobale-big) {@content;}
+};
+
+@mixin mobale-small {
+  @media (max-width: $mobale-small) {@content;}
+};
+
+@mixin mobale {
+  @media (max-width: $mobale) {@content;}
+};

@@ -853,8 +853,13 @@ h1, h2, h3, h4, p {
   padding: 16.5% 0px 10% 0px;
   background-image: url("../../src/img/CTA/bg-forest.png"), url("../../src/img/hero/bg-snow.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: 100% 80%;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 769px) {
+  .gta {
+    padding: 31% 0px 26% 0px;
+  }
 }
 
 .wrapper__gta {
@@ -868,12 +873,23 @@ h1, h2, h3, h4, p {
   text-align: center;
   color: #FFFFFF;
 }
+@media (max-width: 769px) {
+  .text__gta {
+    letter-spacing: 3.5px;
+  }
+}
 
 .gta__button {
   display: grid;
   justify-content: center;
   margin: 0 0 20px 0;
   text-align: center;
+}
+
+@media (max-width: 769px) {
+  .gta__text {
+    margin: 0 0 5px 0;
+  }
 }
 
 .gta__timer_container {

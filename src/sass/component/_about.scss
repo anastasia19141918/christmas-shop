@@ -1,5 +1,8 @@
 .about {
   padding: 40px 0px;
+  @include mobale-small {
+    padding: 140px 0px;
+  }
 }
 
 .about__wrapper {
@@ -8,25 +11,33 @@
   flex-direction: row;
   justify-content: center;
   gap: 0px 0px;
-  
+  @include tablet-small {
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+  }
 };
 
 .about__desk {
+  position: relative;
   max-width: 480px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 11% 60px 40px 60px;
+  padding: 11% 60px 85px 60px;
   
   background-color: $color-static;
   border-radius: 20px;
 
   @include desktop-big {
     max-width: 376px;
-  }
+  };
   @include tablet-big {
     max-width: 350px;
-  }
+  };
+  @include tablet-small {
+    padding: 9% 10px 85px 10px;
+  };
 };
 
 .about__inf {
@@ -45,6 +56,10 @@
   margin-bottom: 20px;
   @include desktop-big {
     max-width: 256px;
+  };
+  @include mobale-small {
+    max-width: 324px;
+    text-align: left;
   }
 };
 
@@ -57,13 +72,26 @@
   letter-spacing: 0.6px;
   @include desktop-big {
     max-width: 256px;
-  }
+  };
   @include tablet-big {
     max-width: 220px;
     line-height: 148%;
     letter-spacing: 1px;
+  };
+  @include tablet-small {
+    max-width: 324px;
+  };
+  @include mobale-small {
+    text-align: left;
   }
-}
+};
+
+.about__img {
+  @include tablet-small {
+    z-index: 10;
+    margin-top: -20px;
+  }
+};
 
 .about__pic {
   border-radius: 20px;
@@ -76,5 +104,8 @@
     max-width: 350px;
     height: 518px;
   }
+  @include tablet-small {
+    max-width: 345px;
+  };
 };
 

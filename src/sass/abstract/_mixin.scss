@@ -14,6 +14,10 @@
   @media (max-width: $tablet-burger-menu) {@content;}
 };
 
+@mixin tablet-small {
+  @media (max-width: $tablet-small) {@content;}
+};
+
 @mixin mobale-big {
   @media (max-width: $mobale-big) {@content;}
 };

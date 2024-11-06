@@ -39,22 +39,34 @@
 .btn:hover {
   background-color: $color-static;
   transition: 0.5s ease-in-out;
-  color: $color-main-backrgaund;
+  @include desktop-small {
+    background-color: $color-main-backrgaund;
+  }
 };
 
 .link:hover {
   color: $color-main-backrgaund;
   transition: 0.5s ease-in-out;
+  @include desktop-small {
+    color: $color-static;
+  }
 };
 
 .slaider__dot:hover {
   color: $color-main;
   background-color: $color-static;
+  @include desktop-small {
+    color: hsla(195, 56%, 62%, 0.6);
+    background-color: transparent;
+  }
 };
 
 .best-gifts_itemn:hover {
   color:$color-main;
   transition: 0.5s ease-in-out;
+  @include desktop-small {
+    color: $color-main-backrgaund;
+  }
 };
 
 .footer__link:hover {

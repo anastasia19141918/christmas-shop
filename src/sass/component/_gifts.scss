@@ -1,6 +1,9 @@
 .gifts {
   padding: 6% 0 2% 0;
   background-color: $color-static;
+  @include mobale-small {
+    padding: 15% 0 2% 0;
+  }
 };
 
 .wrapper__gifts {
@@ -8,6 +11,16 @@
   flex-direction: row;
   justify-content: center;
   gap: 0 15px;
+  @include desktop-small {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 15px 0px;
+  };
+  @include tablet-burger-menu {
+    padding: 0 10px;
+    text-align: center;
+    align-items: center;
+  }
 };
 
 .gifts__itemn {
@@ -22,6 +35,25 @@
   background-color: hsla(0, 0%, 90%, 0.5);
   border-radius: 20px;
   cursor: pointer;
+  @include desktop-small {
+    width: calc(100% - 15%);
+  };
+  @include tablet-burger-menu {
+    width: calc(100% - 17%);
+  };
+  @include tablet-small {
+    width: calc(100% - 20%);
+  };
+  @include tablet-gifts {
+    width: calc(100% - 35%);
+  };
+  @include mobale-small {
+    width: calc(100% - 20%);
+    padding: 26px 20px 19px 20px;
+  };
+  @include mobale-small-about {
+    width: calc(100% - 25%);
+  }
 };
 
 .gifts__title {
@@ -34,6 +66,12 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   color: $color-main-backrgaund;
+  @include mobale-small-about {
+    font-size: 2.0rem;
+  };
+  @include mobale-small-about {
+    font-size: 1.7rem;
+  }
 };
 
 .gifts__text {

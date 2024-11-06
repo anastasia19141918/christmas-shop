@@ -1,23 +1,47 @@
 .about {
   padding: 40px 0px;
+  @include mobale-small {
+    padding: 140px 0px 50px 0px;
+  }
 }
 
 .about__wrapper {
+  padding: 0 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 0px 0px;
+  @include tablet-small {
+    flex-direction: column;
+    align-items: center;
+    text-align: center
+  }
 };
 
 .about__desk {
+  position: relative;
   max-width: 480px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 11% 60px 40px 60px;
+  padding: 11% 60px 85px 60px;
   
   background-color: $color-static;
   border-radius: 20px;
+
+  @include desktop-big {
+    max-width: 376px;
+  };
+  @include tablet-big {
+    max-width: 350px;
+  };
+  @include tablet-small {
+    padding: 9% 10px 85px 10px;
+  };
+  @include mobale-small-about {
+    max-width: 290px;
+    padding: 9% 5px 85px 5px;
+  }
 };
 
 .about__inf {
@@ -29,10 +53,24 @@
   text-align: left;
   margin-bottom: 20px;
   color: $color-main;
+
 };
 
 .about__title {
   margin-bottom: 20px;
+  @include desktop-big {
+    max-width: 256px;
+  };
+  @include mobale-small {
+    max-width: 324px;
+    text-align: left;
+  };
+  @include mobale-small-about {
+    max-width: 270px;
+  };
+  @include mobale {
+    max-width: 240px;
+  }
 };
 
 .about__text {
@@ -42,10 +80,56 @@
   font-weight: normal;
   line-height: 148%;
   letter-spacing: 0.6px;
-}
+  @include desktop-big {
+    max-width: 256px;
+  };
+  @include tablet-big {
+    max-width: 220px;
+    line-height: 148%;
+    letter-spacing: 1px;
+  };
+  @include tablet-small {
+    max-width: 324px;
+  };
+  @include mobale-small {
+    text-align: left;
+  };
+  @include mobale-small-about {
+    max-width: 290px;
+    font-size: 1.4rem;
+  };
+  @include mobale {
+    max-width: 260px;
+    font-size: 1.2rem;
+  }
+};
+
+.about__img {
+  @include tablet-small {
+    z-index: 10;
+    margin-top: -20px;
+  }
+};
 
 .about__pic {
   border-radius: 20px;
   object-fit: cover;
+  @include desktop-big {
+    max-width: 376px;
+    height: 528px;
+  };
+  @include tablet-big {
+    max-width: 350px;
+    height: 518px;
+  }
+  @include tablet-small {
+    max-width: 345px;
+  };
+  @include mobale-small-about {
+    max-width: 300px;
+  };
+  @include mobale {
+    max-width: 280px;
+  }
 };
 

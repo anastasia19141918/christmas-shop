@@ -1,5 +1,11 @@
 .footer {
   padding: 3.5% 0 3% 0;
+  @include tablet-burger-menu {
+    padding: 8% 0 3% 0;
+  };
+  @include mobale {
+    padding: 8% 2% 3% 2%;
+  }
 };
 
 .wrapper__footer {
@@ -15,6 +21,12 @@
   flex-direction: row;
   margin-bottom: 22px;
   gap: 0px 30px;
+  @include tablet-burger-menu {
+    margin-bottom: 20px;
+  };
+  @include mobale-small {
+    margin-bottom: 30px;
+  }
 };
 
 .footer__icon {

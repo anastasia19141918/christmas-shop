@@ -64,6 +64,9 @@
 .best-gifts_itemn:hover {
   color:$color-main;
   transition: 0.5s ease-in-out;
+  @include desktop-small {
+    color: $color-main-backrgaund;
+  }
 };
 
 .footer__link:hover {

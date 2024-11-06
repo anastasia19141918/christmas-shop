@@ -100,6 +100,11 @@
   color: #FF4646;
   transition: 0.5s ease-in-out;
 }
+@media (max-width: 1060px) {
+  .best-gifts_itemn:hover {
+    color: #181C29;
+  }
+}
 
 .footer__link:hover {
   transition: 0.5s ease-in-out;
@@ -787,6 +792,16 @@ h1, h2, h3, h4, p {
   justify-content: center;
   gap: 10px 11px;
 }
+@media (max-width: 769px) {
+  .best-gifts_gallery {
+    gap: 25px 25px;
+  }
+}
+@media (max-width: 381px) {
+  .best-gifts_gallery {
+    gap: 30px 0px;
+  }
+}
 
 .best-gifts_itemn {
   max-width: 310px;
@@ -796,11 +811,27 @@ h1, h2, h3, h4, p {
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
+@media (max-width: 769px) {
+  .best-gifts_itemn {
+    padding: 0 0 30px 0;
+  }
+}
+@media (max-width: 338px) {
+  .best-gifts_itemn {
+    max-width: 270px;
+  }
+}
 
 .best-gifts_img {
   width: 310px;
   height: 230px;
   margin-bottom: 16px;
+}
+@media (max-width: 338px) {
+  .best-gifts_img {
+    width: 280px;
+    height: 210px;
+  }
 }
 
 .best-gifts_desk {

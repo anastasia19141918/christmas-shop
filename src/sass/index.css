@@ -363,6 +363,16 @@ h1, h2, h3, h4, p {
   letter-spacing: 4px;
   text-transform: uppercase;
 }
+@media (max-width: 370px) {
+  .text__section {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 338px) {
+  .text__section {
+    font-size: 1.8rem;
+  }
+}
 
 @media (max-width: 769px) {
   .header__nav {
@@ -468,7 +478,7 @@ h1, h2, h3, h4, p {
 }
 @media (max-width: 381px) {
   .about {
-    padding: 140px 0px;
+    padding: 140px 0px 50px 0px;
   }
 }
 
@@ -512,6 +522,12 @@ h1, h2, h3, h4, p {
     padding: 9% 10px 85px 10px;
   }
 }
+@media (max-width: 370px) {
+  .about__desk {
+    max-width: 290px;
+    padding: 9% 5px 85px 5px;
+  }
+}
 
 .about__inf {
   display: flex;
@@ -536,6 +552,16 @@ h1, h2, h3, h4, p {
   .about__title {
     max-width: 324px;
     text-align: left;
+  }
+}
+@media (max-width: 370px) {
+  .about__title {
+    max-width: 270px;
+  }
+}
+@media (max-width: 338px) {
+  .about__title {
+    max-width: 240px;
   }
 }
 
@@ -569,6 +595,18 @@ h1, h2, h3, h4, p {
     text-align: left;
   }
 }
+@media (max-width: 370px) {
+  .about__text {
+    max-width: 290px;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 338px) {
+  .about__text {
+    max-width: 260px;
+    font-size: 1.2rem;
+  }
+}
 
 @media (max-width: 725px) {
   .about__img {
@@ -596,6 +634,16 @@ h1, h2, h3, h4, p {
 @media (max-width: 725px) {
   .about__pic {
     max-width: 345px;
+  }
+}
+@media (max-width: 370px) {
+  .about__pic {
+    max-width: 300px;
+  }
+}
+@media (max-width: 338px) {
+  .about__pic {
+    max-width: 280px;
   }
 }
 

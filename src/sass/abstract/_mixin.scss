@@ -26,6 +26,10 @@
   @media (max-width: $mobale-small) {@content;}
 };
 
+@mixin mobale-small-about {
+  @media (max-width: $mobale-small-about) {@content;}
+};
+
 @mixin mobale {
   @media (max-width: $mobale) {@content;}
 };

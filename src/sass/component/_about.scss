@@ -1,7 +1,7 @@
 .about {
   padding: 40px 0px;
   @include mobale-small {
-    padding: 140px 0px;
+    padding: 140px 0px 50px 0px;
   }
 }
 
@@ -38,6 +38,10 @@
   @include tablet-small {
     padding: 9% 10px 85px 10px;
   };
+  @include mobale-small-about {
+    max-width: 290px;
+    padding: 9% 5px 85px 5px;
+  }
 };
 
 .about__inf {
@@ -60,6 +64,12 @@
   @include mobale-small {
     max-width: 324px;
     text-align: left;
+  };
+  @include mobale-small-about {
+    max-width: 270px;
+  };
+  @include mobale {
+    max-width: 240px;
   }
 };
 
@@ -83,6 +93,14 @@
   };
   @include mobale-small {
     text-align: left;
+  };
+  @include mobale-small-about {
+    max-width: 290px;
+    font-size: 1.4rem;
+  };
+  @include mobale {
+    max-width: 260px;
+    font-size: 1.2rem;
   }
 };
 
@@ -107,5 +125,11 @@
   @include tablet-small {
     max-width: 345px;
   };
+  @include mobale-small-about {
+    max-width: 300px;
+  };
+  @include mobale {
+    max-width: 280px;
+  }
 };
 

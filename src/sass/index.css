@@ -68,12 +68,21 @@
 .btn:hover {
   background-color: #FFFFFF;
   transition: 0.5s ease-in-out;
-  color: #181C29;
+}
+@media (max-width: 769px) {
+  .btn:hover {
+    background-color: #181C29;
+  }
 }
 
 .link:hover {
   color: #181C29;
   transition: 0.5s ease-in-out;
+}
+@media (max-width: 769px) {
+  .link:hover {
+    color: #FFFFFF;
+  }
 }
 
 .slaider__dot:hover {
@@ -281,6 +290,11 @@ h1, h2, h3, h4, p {
 
 .main {
   padding: 0 20px;
+}
+@media (max-width: 769px) {
+  .main {
+    padding: 0px 0px;
+  }
 }
 
 .main__bacgraund {

@@ -23,6 +23,9 @@
   &_mail {
     background-image: url('../../src/img/Gifts/gifts-img_3.png');
   }
+  @include tablet-burger-menu {
+    margin-bottom: 5px;
+  }
 };
 
 .footer__icon {

@@ -185,6 +185,11 @@ h1, h2, h3, h4, p {
 .gifts__icon_mail {
   background-image: url("../../src/img/Gifts/gifts-img_3.png");
 }
+@media (max-width: 769px) {
+  .gifts__icon {
+    margin-bottom: 5px;
+  }
+}
 
 .footer__icon {
   display: block;
@@ -316,6 +321,16 @@ h1, h2, h3, h4, p {
 .footer {
   padding: 3.5% 0 3% 0;
 }
+@media (max-width: 769px) {
+  .footer {
+    padding: 8% 0 3% 0;
+  }
+}
+@media (max-width: 338px) {
+  .footer {
+    padding: 8% 2% 3% 2%;
+  }
+}
 
 .wrapper__footer {
   display: flex;
@@ -330,6 +345,16 @@ h1, h2, h3, h4, p {
   flex-direction: row;
   margin-bottom: 22px;
   gap: 0px 30px;
+}
+@media (max-width: 769px) {
+  .footer__itemns {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 381px) {
+  .footer__itemns {
+    margin-bottom: 30px;
+  }
 }
 
 .footer__icon {

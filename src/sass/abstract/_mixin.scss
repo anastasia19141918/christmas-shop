@@ -18,6 +18,14 @@
   @media (max-width: $tablet-small) {@content;}
 };
 
+@mixin tablet-small-slaider {
+  @media(max-width: $tablet-small-slaider) {@content;}
+};
+
+@mixin desktop-small-gallery {
+  @media (max-width: $desktop-small-gallery) {@content;}
+};
+
 @mixin mobale-big {
   @media (max-width: $mobale-big) {@content;}
 };

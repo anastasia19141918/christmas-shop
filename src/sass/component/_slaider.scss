@@ -23,6 +23,14 @@
   gap: 0 25px;
 
   overflow: hidden;
+  @include desktop-small-gallery {
+    padding: 0 0 0 0%;
+    gap: 0 5px;
+  };
+  @include  tablet-burger-menu {
+    padding: 0 0 0 1%;
+    gap: 0 5px;
+  }
 }
 
 .slaider__item_title {
@@ -39,6 +47,21 @@
   text-align: center;
   align-items: center;
   gap: 0px 15px;
+  @include desktop-small-gallery {
+    gap: 0 5px;
+  };
+  @include  tablet-burger-menu {
+    gap: 0 20px;
+  };
+  @include tablet-small-slaider {
+    gap: 0 2px;
+  };
+  @include mobale-small {
+    gap: 0 22px;
+  };
+  @include mobale-small-about {
+    gap: 0 5px;
+  }
 };
 
 .slaider__img {

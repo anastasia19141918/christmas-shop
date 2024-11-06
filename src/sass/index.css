@@ -861,6 +861,11 @@ h1, h2, h3, h4, p {
     padding: 31% 0px 26% 0px;
   }
 }
+@media (max-width: 381px) {
+  .gta {
+    padding: 60% 3% 50% 3%;
+  }
+}
 
 .wrapper__gta {
   display: grid;
@@ -876,6 +881,11 @@ h1, h2, h3, h4, p {
 @media (max-width: 769px) {
   .text__gta {
     letter-spacing: 3.5px;
+  }
+}
+@media (max-width: 381px) {
+  .text__gta {
+    max-width: 426px;
   }
 }
 
@@ -896,6 +906,11 @@ h1, h2, h3, h4, p {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 370px) {
+  .gta__timer_container {
+    padding: 0px 10px;
+  }
+}
 
 .gta__timer {
   display: flex;
@@ -905,6 +920,16 @@ h1, h2, h3, h4, p {
   gap: 0 10px;
   background-color: hsla(0, 0%, 80%, 0.5);
   border-radius: 20px;
+}
+@media (max-width: 370px) {
+  .gta__timer {
+    padding: 5px 10px;
+  }
+}
+@media (max-width: 338px) {
+  .gta__timer {
+    padding: 5px 5px;
+  }
 }
 
 .text__section_time {
@@ -937,6 +962,11 @@ h1, h2, h3, h4, p {
   justify-content: center;
   gap: 0 15px;
 }
+@media (max-width: 1060px) {
+  .wrapper__gifts {
+    flex-direction: column;
+  }
+}
 
 .gifts__itemn {
   width: 20.6666666667%;
@@ -949,6 +979,11 @@ h1, h2, h3, h4, p {
   background-color: hsla(0, 0%, 90%, 0.5);
   border-radius: 20px;
   cursor: pointer;
+}
+@media (max-width: 1060px) {
+  .gifts__itemn {
+    width: 100%;
+  }
 }
 
 .gifts__title {

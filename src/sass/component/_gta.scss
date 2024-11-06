@@ -6,6 +6,9 @@
   background-position: center;
   @include tablet-burger-menu {
     padding: 31% 0px 26% 0px;
+  };
+  @include mobale-small {
+    padding: 60% 3% 50% 3%;
   }
 };
 
@@ -21,6 +24,9 @@
   color: $color-static;
   @include tablet-burger-menu {
     letter-spacing: 3.5px;
+  };
+  @include mobale-small {
+    max-width: 426px;
   }
 };
 
@@ -42,6 +48,9 @@
 .gta__timer_container {
   display: flex;
   justify-content: center;
+  @include mobale-small-about {
+    padding: 0px 10px;
+  }
 };
 
 .gta__timer {
@@ -52,6 +61,12 @@
   gap: 0 10px;
   background-color: hsl(0, 0%, 80%, 0.5);
   border-radius: 20px;
+  @include mobale-small-about {
+    padding: 5px 10px;
+  };
+  @include mobale {
+    padding: 5px 5px;
+  }
 };
 
 .text__section_time {

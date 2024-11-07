@@ -1086,6 +1086,16 @@ h1, h2, h3, h4, p {
 .gifts-galley {
   padding: 4.2% 0;
 }
+@media (max-width: 769px) {
+  .gifts-galley {
+    padding: 8% 0 4% 0;
+  }
+}
+@media (max-width: 381px) {
+  .gifts-galley {
+    padding: 16% 0 13% 0;
+  }
+}
 
 .wrapper__gifts_gallery {
   display: grid;
@@ -1102,6 +1112,23 @@ h1, h2, h3, h4, p {
   flex-direction: row;
   gap: 0 9px;
 }
+@media (max-width: 568px) {
+  .gifts-galley_btns {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 381px) {
+  .gifts-galley_btns {
+    gap: 0 4px;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media (max-width: 370px) {
+  .gifts-galley_btns {
+    gap: 0 2px;
+  }
+}
 
 .gifts-galley_btn {
   padding: 11px 20px;
@@ -1114,6 +1141,17 @@ h1, h2, h3, h4, p {
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
+}
+@media (max-width: 568px) {
+  .gifts-galley_btn {
+    padding: 8px 4px;
+  }
+}
+@media (max-width: 381px) {
+  .gifts-galley_btn {
+    padding: 8px 10px;
+    font-size: 1rem;
+  }
 }
 
 .gifts-galley_btn_active {
@@ -1131,6 +1169,11 @@ h1, h2, h3, h4, p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 35px 10px;
+}
+@media (max-width: 769px) {
+  .gallery {
+    gap: 25px 20px;
+  }
 }
 
 .gifts__main {

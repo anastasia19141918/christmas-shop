@@ -1,5 +1,11 @@
 .gifts-galley {
   padding: 4.2% 0;
+  @include tablet-burger-menu {
+    padding: 8% 0 4% 0;
+  };
+  @include mobale-small {
+    padding: 16% 0 13% 0;
+  }
 }
 
 .wrapper__gifts_gallery {
@@ -16,6 +22,17 @@
   display: flex;
   flex-direction: row;
   gap: 0 9px;
+  @include tablet-gifts {
+    padding: 0 10px;
+  };
+  @include mobale-small {
+    gap: 0 4px;
+    text-align: center;
+    align-items: center;
+  };
+  @include mobale-small-about {
+    gap: 0 2px;
+  }
 };
 
 .gifts-galley_btn {
@@ -29,6 +46,13 @@
   text-transform: uppercase;
   color: $color-static;
   cursor: pointer;
+  @include tablet-gifts {
+    padding: 8px 4px;
+  };
+  @include mobale-small {
+    padding: 8px 10px;
+    font-size: 1.0rem;
+  }
 };
 
 .gifts-galley_btn_active {
@@ -46,6 +70,9 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 35px 10px;
+  @include tablet-burger-menu {
+    gap: 25px 20px;
+  }
 };
 
 .gifts__main {

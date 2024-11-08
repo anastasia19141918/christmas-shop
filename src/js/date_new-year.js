@@ -3,12 +3,11 @@ const hours = document.getElementById('hours');
 const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
 
-const nowYear = new Date().getFullYear();
+const nowYear = new Date().getFullYear();//год сейчас
 const NewYear = new Date(`1 Jan ${nowYear + 1} 00:00:00`);
 function countDownTime() {
-  const nowDate = Date.now();
+  const nowDate = Date.now();//время сейчас
   const get = NewYear - nowDate;
-  
 
   const daysCount = Math.floor(get / 1000 / 60 / 60 / 24);
   const hoursCount = Math.floor((get / 1000 / 60 / 60) % 24);

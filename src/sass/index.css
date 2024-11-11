@@ -1140,6 +1140,7 @@ h1, h2, h3, h4, p {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #FFFFFF;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 @media (max-width: 568px) {
@@ -1156,6 +1157,7 @@ h1, h2, h3, h4, p {
 
 .gifts-galley_btn_active {
   background-color: hsla(0, 0%, 80%, 0.5);
+  transition: 0.5s ease-in-out;
 }
 
 .gallery__dg {

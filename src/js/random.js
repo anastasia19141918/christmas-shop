@@ -7,6 +7,9 @@ const arrowThree = cards[2];
 
 const newArrowcards = [...arrowOne, ...arrowTwo, ...arrowThree];
 
+window.addEventListener('load', randomsCards);
+
+
 function shuffle(array) {
   for(let i = array.length - 1; i > 0; i--){
   let j = Math.floor(Math.random() * (i + 1));
@@ -58,25 +61,16 @@ function randomsCards() {
       divDesk.appendChild(h4);
       divDesk.appendChild(h3);
 
-      
-
-
     }
   })
  
 };
 
-window.addEventListener('load', randomsCards);
 
 
 
 
- //newArrowcards.forEach(function(el){
-    //for(let el = 0; el < 3; el++) {
-      
-    //}
-    
-  //})
+
 
 
 

@@ -23,8 +23,13 @@ function randomsCards() {
   shuffle(newArrowcards);
   newArrowcards.some(function(el, i) {
     if(i < 4) {
-      
-      const div = document.createElement('div');
+      creat(el);
+    }
+  })
+};
+
+export function creat(el) {
+  const div = document.createElement('div');
       div.classList.add('best-gifts_itemn');
 
       const img = document.createElement('img');
@@ -60,11 +65,7 @@ function randomsCards() {
       div.appendChild(divDesk);
       divDesk.appendChild(h4);
       divDesk.appendChild(h3);
-
-    }
-  })
- 
-};
+}
 
 
 

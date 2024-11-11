@@ -470,6 +470,152 @@ const cards = [
       }
     },
   ],
+  [
+    {
+      "name": "Console.log Guru",
+      "img":"./src/img/Best-Gifts/img_1.png",
+      "description": "Uses console.log like a crystal ball to find any issue.",
+      "category": "For Work",
+      "superpowers": {
+        "live": "+500",
+        "create": "+500",
+        "love": "+200",
+        "dream": "+400"
+      }
+    },
+    {
+      "name": "Step Master",
+      "img":"./src/img/Best-Gifts/img_3.png",
+      "description": "Gets 10,000 steps a day even while sitting at the computer.",
+      "category": "For Health",
+      "superpowers": {
+        "live": "+400",
+        "create": "+300",
+        "love": "+500",
+        "dream": "+400"
+      }
+    },
+    {
+      "name": "Bug Magnet",
+      "img":"./src/img/Best-Gifts/img_1.png",
+      "description": "Able to find bugs in code like they were placed there on purpose.",
+      "category": "For Work",
+      "superpowers": {
+        "live": "+500",
+        "create": "+500",
+        "love": "+200",
+        "dream": "+400"
+      }
+    },
+    {
+      "name": "Shortcut Cheater",
+      "img":"./src/img/Best-Gifts/img_1.png",
+      "description": "Knows every keyboard shortcut like they were born with them.",
+      "category": "For Work",
+      "superpowers": {
+        "live": "+500",
+        "create": "+500",
+        "love": "+400",
+        "dream": "+200"
+      }
+    },
+    {
+      "name": "Posture Levitation",
+      "img":"./src/img/Best-Gifts/img_3.png",
+      "description": "Can sit for hours, but maintains perfect posture like a ballerina.",
+      "category": "For Health",
+      "superpowers": {
+        "live": "+400",
+        "create": "+500",
+        "love": "+500",
+        "dream": "+400"
+      }
+    },
+    {
+      "name": "Bug Acceptance Guru",
+      "img":"./src/img/Best-Gifts/img_2.png",
+      "description": "Accepts bugs as part of the journey to perfection — it’s just another task.",
+      "category": "For Harmony",
+      "superpowers": {
+        "live": "+300",
+        "create": "+200",
+        "love": "+500",
+        "dream": "+400"
+      }
+    },
+    {
+      "name": "Snack Resister",
+      "img":"./src/img/Best-Gifts/img_3.png",
+      "description": "Ignoring desktop snacks like a strict dietician.",
+      "category": "For Health",
+      "superpowers": {
+        "live": "+400",
+        "create": "+100",
+        "love": "+200",
+        "dream": "+400"
+      }
+    },
+    {
+      "name": "Error Laugher",
+      "img":"./src/img/Best-Gifts/img_2.png",
+      "description": "Laughs at code errors like they’re jokes instead of getting angry.",
+      "category": "For Harmony",
+      "superpowers": {
+        "live": "+300",
+        "create": "+200",
+        "love": "+500",
+        "dream": "+500"
+      }
+    },
+    {
+      "name": "Hydration Bot",
+      "img":"./src/img/Best-Gifts/img_3.png",
+      "description": "Drinks the recommended 2 liters of water a day like a health-programmed robot.",
+      "category": "For Health",
+      "superpowers": {
+        "live": "+500",
+        "create": "+300",
+        "love": "+500",
+        "dream": "+500"
+      }
+    },
+    {
+      "name": "Merge Master",
+      "img":"./src/img/Best-Gifts/img_1.png",
+      "description": "Merges branches in Git without conflicts, like a wizard during an exam.",
+      "category": "For Work",
+      "superpowers": {
+        "live": "+200",
+        "create": "+500",
+        "love": "+200",
+        "dream": "+300"
+      }
+    },
+    {
+      "name": "Joy Charger",
+      "img":"./src/img/Best-Gifts/img_2.png",
+      "description": "Finds joy in the little things—even in a build that finishes unexpectedly fast.",
+      "category": "For Harmony",
+      "superpowers": {
+        "live": "+200",
+        "create": "+200",
+        "love": "+500",
+        "dream": "+500"
+      }
+    },
+    {
+      "name": "Spontaneous Coding Philosopher",
+      "img":"./src/img/Best-Gifts/img_2.png",
+      "description": "Philosophically accepts any client suggestion after a long refactor.",
+      "category": "For Harmony",
+      "superpowers": {
+        "live": "+300",
+        "create": "+200",
+        "love": "+500",
+        "dream": "+400"
+      }
+    },
+  ],
 ];
 
 export default cards;

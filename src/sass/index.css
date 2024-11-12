@@ -351,7 +351,7 @@ h1, h2, h3, h4, p {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 381px) {
+@media (max-width: 380px) {
   .footer__itemns {
     margin-bottom: 30px;
   }
@@ -497,7 +497,7 @@ h1, h2, h3, h4, p {
   letter-spacing: 5.5px;
   color: #FFFFFF;
 }
-@media (max-width: 381px) {
+@media (max-width: 380px) {
   .hero__title {
     max-width: 364px;
   }
@@ -512,7 +512,7 @@ h1, h2, h3, h4, p {
 .about {
   padding: 40px 0px;
 }
-@media (max-width: 381px) {
+@media (max-width: 380px) {
   .about {
     padding: 140px 0px 50px 0px;
   }
@@ -584,7 +584,7 @@ h1, h2, h3, h4, p {
     max-width: 256px;
   }
 }
-@media (max-width: 381px) {
+@media (max-width: 380px) {
   .about__title {
     max-width: 324px;
     text-align: left;
@@ -626,7 +626,7 @@ h1, h2, h3, h4, p {
     max-width: 324px;
   }
 }
-@media (max-width: 381px) {
+@media (max-width: 380px) {
   .about__text {
     text-align: left;
   }
@@ -751,7 +751,7 @@ h1, h2, h3, h4, p {
     gap: 0 2px;
   }
 }
-@media (max-width: 381px) {
+@media (max-width: 380px) {
   .slaider__item {
     gap: 0 22px;
   }
@@ -822,7 +822,7 @@ h1, h2, h3, h4, p {
     gap: 25px 25px;
   }
 }
-@media (max-width: 381px) {
+@media (max-width: 380px) {
   .best-gifts_gallery {
     gap: 30px 0px;
   }
@@ -886,7 +886,7 @@ h1, h2, h3, h4, p {
     padding: 31% 0px 26% 0px;
   }
 }
-@media (max-width: 381px) {
+@media (max-width: 380px) {
   .gta {
     padding: 60% 3% 50% 3%;
   }
@@ -908,7 +908,7 @@ h1, h2, h3, h4, p {
     letter-spacing: 3.5px;
   }
 }
-@media (max-width: 381px) {
+@media (max-width: 380px) {
   .text__gta {
     max-width: 426px;
   }
@@ -980,7 +980,7 @@ h1, h2, h3, h4, p {
   padding: 6% 0 2% 0;
   background-color: #FFFFFF;
 }
-@media (max-width: 381px) {
+@media (max-width: 380px) {
   .gifts {
     padding: 15% 0 2% 0;
   }
@@ -1039,7 +1039,7 @@ h1, h2, h3, h4, p {
     width: 65%;
   }
 }
-@media (max-width: 381px) {
+@media (max-width: 380px) {
   .gifts__itemn {
     width: 80%;
     padding: 26px 20px 19px 20px;
@@ -1091,7 +1091,7 @@ h1, h2, h3, h4, p {
     padding: 8% 0 4% 0;
   }
 }
-@media (max-width: 381px) {
+@media (max-width: 380px) {
   .gifts-galley {
     padding: 16% 0 13% 0;
   }
@@ -1117,7 +1117,7 @@ h1, h2, h3, h4, p {
     padding: 0 10px;
   }
 }
-@media (max-width: 381px) {
+@media (max-width: 380px) {
   .gifts-galley_btns {
     gap: 0 4px;
     text-align: center;
@@ -1148,7 +1148,7 @@ h1, h2, h3, h4, p {
     padding: 8px 4px;
   }
 }
-@media (max-width: 381px) {
+@media (max-width: 380px) {
   .gifts-galley_btn {
     padding: 8px 10px;
     font-size: 1rem;
@@ -1226,14 +1226,198 @@ h1, h2, h3, h4, p {
 .form {
   width: 100%;
   height: 100vh;
+  position: fixed;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+}
+
+.form__active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.3s ease-in-out;
 }
 
 .form__body {
-  position: absolute;
+  top: 18%;
+  left: 35%;
+  max-width: 400px;
   background-color: #FFFFFF;
+  border-radius: 20px;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+@media (max-width: 1060px) {
+  .form__body {
+    top: 12%;
+    left: 32%;
+  }
+}
+@media (max-width: 845px) {
+  .form__body {
+    top: 9%;
+    left: 25%;
+  }
+}
+@media (max-width: 725px) {
+  .form__body {
+    top: 8%;
+    left: 20%;
+  }
+}
+@media (max-width: 660px) {
+  .form__body {
+    top: 11%;
+    left: 24%;
+    max-width: 350px;
+  }
+}
+@media (max-width: 620px) {
+  .form__body {
+    max-width: 320px;
+    left: 22%;
+  }
+}
+@media (max-width: 568px) {
+  .form__body {
+    left: 20%;
+  }
+}
+@media (max-width: 520px) {
+  .form__body {
+    top: 11%;
+    left: 18%;
+    max-width: 320px;
+  }
+}
+@media (max-width: 500px) {
+  .form__body {
+    left: 17%;
+    max-width: 310px;
+  }
+}
+@media (max-width: 450px) {
+  .form__body {
+    left: 13%;
+  }
+}
+@media (max-width: 435px) {
+  .form__body {
+    left: 13%;
+    max-width: 290px;
+  }
+}
+@media (max-width: 380px) {
+  .form__body {
+    left: 14%;
+    max-width: 250px;
+  }
+}
+@media (max-width: 360px) {
+  .form__body {
+    max-width: 230px;
+  }
+}
+@media (max-width: 338px) {
+  .form__body {
+    max-width: 210px;
+  }
+}
+
+.form__img {
+  position: relative;
+  width: 100%;
+  background-color: hsla(0, 0%, 90%, 0.5);
+  border-radius: 20px;
+}
+
+.form__close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: -70%;
+  margin-left: 85%;
+  background-image: url("../../src/img/form/close.png");
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
+@media (max-width: 380px) {
+  .form__close {
+    margin-left: 82%;
+  }
+}
+
+.form__desk {
+  padding: 10px;
+}
+
+.form-text-desk {
+  max-width: 100%;
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 148%;
+}
+@media (max-width: 435px) {
+  .form-text-desk {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .form-text-desk {
+    font-size: 1.3rem;
+  }
+}
+
+.form__add {
+  display: flex;
+  flex-direction: row;
+  gap: 0 10%;
+}
+
+.form__superpower {
+  width: 120px;
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  line-height: 148%;
+}
+@media (max-width: 380px) {
+  .form__superpower {
+    font-size: 1.3rem;
+  }
+}
+
+.form__superpower_sum {
+  text-align: center;
+}
+
+.form__snows {
+  max-width: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 0 5px;
+}
+
+.form__snow {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../../src/img/form/snowflake.jpg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+}
+@media (max-width: 380px) {
+  .form__snow {
+    width: 10px;
+    height: 10px;
+    background-size: 10px 10px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

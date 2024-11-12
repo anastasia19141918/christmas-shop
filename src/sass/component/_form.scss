@@ -1,15 +1,163 @@
 .form {
   width: 100%;
   height: 100vh;
-  //position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.7);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
 };
 
+.form__active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.3s ease-in-out;
+}
+
 .form__body {
+  top: 18%;
+  left: 35%;
   
-  position: absolute;
-  
+  max-width: 400px;
   background-color: $color-static;
+  border-radius: 20px;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  @include desktop-small {
+    top: 12%;
+    left: 32%;
+  };
+  @include tablet-big {
+    top: 9%;
+    left: 25%;
+  } 
+  @include tablet-small {
+    top: 8%;
+    left: 20%;
+  };
+  @include tablet-form {
+    top: 11%;
+    left: 24%;
+    max-width: 350px;
+  };
+  @include tablet-samll-form {
+    max-width: 320px;
+    left: 22%;
+  };
+  @include tablet-gifts {
+    left: 20%;
+  };
+  @include mobale-form {
+    top: 11%;
+    left: 18%;
+    max-width: 320px;
+  };
+  @include mobale-form-big {
+    left: 17%;
+    max-width: 310px;
+  };
+  @include mob-form-big {
+    left: 13%;
+  };
+  @include tablet-small-slaider {
+    left: 13%;
+    max-width: 290px;
+  };
+  @include mobale-small {
+    left: 14%;
+    max-width: 250px;
+  };
+  @include mobale-small-form {
+    max-width: 230px;
+  };
+  @include mobale {
+    max-width: 210px;
+  }
+};
+
+.form__img {
+  position: relative;
+  width: 100%;
+  background-color: hsla(0, 0%, 90%, 0.5);
+  border-radius: 20px;
+};
+
+.form__close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: -70%;
+  margin-left: 85%;
+  background-image: url('../../src/img/form/close.png');
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  @include mobale-small {
+    margin-left: 82%;
+  }
+}
+
+.form__desk {
+  padding:  10px;
+};
+
+.form-text-desk {
+  max-width: 100%;
+  font-family: 'Montserrat';
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 148%;
+  @include tablet-small-slaider {
+    margin-bottom: 20px;
+  };
+  @include mobale-small {
+    font-size: 1.3rem;
+  }
+};
+
+.form__add {
+  display: flex;
+  flex-direction: row;
+  gap: 0 10%;
+};
+
+.form__superpower {
+  width: 120px;
+  font-family: 'Montserrat';
+  font-size: 1.6rem;
+  line-height: 148%;
+  @include mobale-small {
+    font-size: 1.3rem;
+  }
+};
+
+.form__superpower_sum {
+  text-align: center;
+}
+
+.form__snows {
+  max-width: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  
+  gap: 0 5px;
+}
+
+.form__snow {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url('../../src/img/form/snowflake.jpg');
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  @include mobale-small {
+    width: 10px;
+    height: 10px;
+    background-size: 10px 10px;
+  }
 }

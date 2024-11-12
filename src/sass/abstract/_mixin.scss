@@ -18,6 +18,14 @@
   @media (max-width: $tablet-small) {@content;}
 };
 
+@mixin tablet-form {
+  @media (max-width: $tablet-form) {@content;}
+};
+
+@mixin tablet-samll-form {
+  @media (max-width: $tablet-samll-form) {@content;}
+};
+
 @mixin tablet-small-slaider {
   @media(max-width: $tablet-small-slaider) {@content;}
 };
@@ -38,8 +46,24 @@
   @media (max-width: $tablet-gifts) {@content;}
 };
 
+@mixin mobale-form {
+  @media (max-width: $mobale-form) {@content;}
+};
+
+@mixin mobale-form-big {
+  @media (max-width: $mobale-form-big) {@content;}
+};
+
+@mixin mob-form-big {
+  @media (max-width: $mob-form-big) {@content;}
+};
+
 @mixin mobale-small-about {
   @media (max-width: $mobale-small-about) {@content;}
+};
+
+@mixin mobale-small-form {
+  @media (max-width: $mobale-small-form) {@content;}
 };
 
 @mixin mobale {

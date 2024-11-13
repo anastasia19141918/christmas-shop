@@ -1193,6 +1193,7 @@ h1, h2, h3, h4, p {
 @media (max-width: 769px) {
   .galley-btn-up {
     display: block;
+    opacity: 0;
   }
 }
 @media (max-width: 660px) {
@@ -1218,6 +1219,10 @@ h1, h2, h3, h4, p {
     right: 13%;
     top: 10.6%;
   }
+}
+
+.galley-btn-up__active {
+  opacity: 1;
 }
 
 .galley-btn-up-img {

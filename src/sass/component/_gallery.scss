@@ -91,7 +91,8 @@
 	top: 20%;
   transition: all .3s ease-in-out;
   @include tablet-burger-menu {
-    display: block
+    display: block;
+    opacity: 0;
   };
   @include tablet-form {
     right: 15%;
@@ -110,6 +111,10 @@
     top: 10.6%;
   }
 };
+
+.galley-btn-up__active {
+  opacity: 1;
+}
 
 .galley-btn-up-img {
   display: block;

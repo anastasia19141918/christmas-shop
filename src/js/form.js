@@ -1,5 +1,7 @@
 import cards from './cards.js';
 
+//console.log();
+
 const formClose = document.getElementById('form__close');
 const form = document.getElementById('form');
 
@@ -11,6 +13,8 @@ const formLive = document.getElementById('form__live');
 const formCreat = document.getElementById('form__creat');
 const formLove = document.getElementById('form__love');
 const formDream = document.getElementById('form__dream');
+
+const galleyBtnUp = document.getElementById('galley-btn-up');
 
 //form close start
 formClose.addEventListener('click', function(){
@@ -56,6 +60,8 @@ window.addEventListener('click', function(el){
   }
 });
 
+window.addEventListener('scroll', BtnScroll);
+
 function creatForm(e, dataSetId) {
   let cardId = e.find(el => el.id === dataSetId);
   
@@ -67,5 +73,25 @@ function creatForm(e, dataSetId) {
   formCreat.innerText = cardId.superpowers.create;
   formLove.innerText = cardId.superpowers.love;
   formDream.innerText = cardId.superpowers.dream;
-}
+};
+
+function BtnScroll () {
+  if (window.scrollY || window.pageYOffSet > 20) {
+    galleyBtnUp.classList.toggle('galley-btn-up__active');
+  } else {
+    galleyBtnUp.classList.remove('galley-btn-up__active');
+  }
+};
+
+galleyBtnUp.addEventListener('click', function(){
+  window.scrollTo(0,0);
+})
+
+
+
+
+
+
+
+
 

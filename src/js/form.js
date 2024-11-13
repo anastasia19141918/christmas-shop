@@ -76,7 +76,7 @@ function creatForm(e, dataSetId) {
 };
 
 function BtnScroll () {
-  if (window.scrollY || window.pageYOffSet > 20) {
+  if (window.scrollY || window.pageYOffSet > 30) {
     galleyBtnUp.classList.toggle('galley-btn-up__active');
   } else {
     galleyBtnUp.classList.remove('galley-btn-up__active');

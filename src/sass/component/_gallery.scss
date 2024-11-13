@@ -9,6 +9,7 @@
 }
 
 .wrapper__gifts_gallery {
+  position: relative;
   display: grid;
   justify-items: center;
 };
@@ -79,4 +80,48 @@
 
 .gifts__main {
   padding: 4% 0 2.4% 0;
+};
+
+//btn up
+
+.galley-btn-up {
+  display: none;
+  position: absolute;
+  right: 6%;
+	top: 20%;
+  transition: all .3s ease-in-out;
+  @include tablet-burger-menu {
+    display: block
+  };
+  @include tablet-form {
+    right: 15%;
+    top: 10.5%;
+  };
+  @include mobale-form-big {
+    right: 11%;
+    top: 11%;
+  };
+  @include mobale-big {
+    right: 11%;
+    top: 10%;
+  };
+  @include mobale-small {
+    right: 13%;
+    top: 10.6%;
+  }
+};
+
+.galley-btn-up-img {
+  display: block;
+  position: fixed;
+  width: 34px;
+  height: 34px;
+  background-image: url('../../src/img/gallery/arrow-up.png');
+  background-color: $color-static;
+  background-size: 34px 34px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 2px solid $color-main;
+
+  cursor: pointer;
 }

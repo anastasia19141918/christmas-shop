@@ -1098,6 +1098,7 @@ h1, h2, h3, h4, p {
 }
 
 .wrapper__gifts_gallery {
+  position: relative;
   display: grid;
   justify-items: center;
 }
@@ -1180,6 +1181,57 @@ h1, h2, h3, h4, p {
 
 .gifts__main {
   padding: 4% 0 2.4% 0;
+}
+
+.galley-btn-up {
+  display: none;
+  position: absolute;
+  right: 6%;
+  top: 20%;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 769px) {
+  .galley-btn-up {
+    display: block;
+  }
+}
+@media (max-width: 660px) {
+  .galley-btn-up {
+    right: 15%;
+    top: 10.5%;
+  }
+}
+@media (max-width: 500px) {
+  .galley-btn-up {
+    right: 11%;
+    top: 11%;
+  }
+}
+@media (max-width: 422px) {
+  .galley-btn-up {
+    right: 11%;
+    top: 10%;
+  }
+}
+@media (max-width: 380px) {
+  .galley-btn-up {
+    right: 13%;
+    top: 10.6%;
+  }
+}
+
+.galley-btn-up-img {
+  display: block;
+  position: fixed;
+  width: 34px;
+  height: 34px;
+  background-image: url("../../src/img/gallery/arrow-up.png");
+  background-color: #FFFFFF;
+  background-size: 34px 34px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 2px solid #FF4646;
+  cursor: pointer;
 }
 
 .burger {

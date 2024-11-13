@@ -31,16 +31,19 @@ btnCard.addEventListener('click', function(element){
       creat(el, gallery);
     });
   };
-  if(element.target.innerText === 'ALL') {
-    galleryDelit(gallery);
-    cards[3].some(function(el, i){ 
-      creat(el, gallery);
-    });
-  };
 });
 
 function galleryDelit(el) {
   gallery.innerHTML = '';
 };
+
+window.addEventListener('load', cardsGifts);
+
+function cardsGifts () {
+  galleryDelit(gallery);
+    cards[0].some(function(el, i){ 
+      creat(el, gallery);
+    });
+}
 
 

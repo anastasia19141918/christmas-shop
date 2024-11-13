@@ -34,16 +34,22 @@ window.addEventListener('click', function(el){
     form.classList.add('form__active');
 
     if (btnCard === 'For Work') {
+      formTitle.classList.remove('card_title_health');
+      formTitle.classList.remove('card_title_harmony');
       formTitle.classList.add('card_title_work');
       creatForm (cards[0], dataSetId);
     };
 
     if (btnCard === 'For Health') {
+      formTitle.classList.remove('card_title_harmony');
+      formTitle.classList.remove('card_title_work');
       formTitle.classList.add('card_title_health');
       creatForm (cards[1], dataSetId);
     };
  
     if (btnCard === 'For Harmony') {
+      formTitle.classList.remove('card_title_work');
+      formTitle.classList.remove('card_title_health');
       formTitle.classList.add('card_title_harmony');
       creatForm (cards[2], dataSetId);
     };

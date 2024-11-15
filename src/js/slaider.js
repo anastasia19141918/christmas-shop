@@ -36,7 +36,7 @@ function slaider() {
     slaiderGallery.style.transform = `translateX(${slaiderOffset}px)`;
   };
   if (window.innerWidth < '380') {
-    const widthSlaider = '350';
+    const widthSlaider = '395';
     const slaiderOffset = -slaiderIndex * widthSlaider;
     slaiderGallery.style.transform = `translateX(${slaiderOffset}px)`;
   };

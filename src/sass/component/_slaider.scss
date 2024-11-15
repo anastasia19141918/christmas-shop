@@ -15,14 +15,22 @@
   color: $color-static;
 };
 
+.slaids {
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
 .slaider__gallery {
+  max-width: 1260px;
+  width: 100%;
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   padding: 0 0 0 6%;
   gap: 0 25px;
+  transition: transform 0.5s ease-in-out;
 
-  overflow: hidden;
+  
   @include desktop-small-gallery {
     padding: 0 0 0 0%;
     gap: 0 5px;
@@ -31,7 +39,9 @@
     padding: 0 0 0 1%;
     gap: 0 5px;
   }
-}
+};
+
+
 
 .slaider__item_title {
   font-family: 'Montserrat';
@@ -39,6 +49,9 @@
   font-weight: 600;
   text-transform: uppercase;
   color: $color-static;
+  @include mobale-small {
+    font-size: 6.0rem;
+  }
 };
 
 .slaider__item {

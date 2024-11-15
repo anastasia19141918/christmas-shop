@@ -700,13 +700,20 @@ h1, h2, h3, h4, p {
   color: #FFFFFF;
 }
 
+.slaids {
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
 .slaider__gallery {
+  max-width: 1260px;
+  width: 100%;
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   padding: 0 0 0 6%;
   gap: 0 25px;
-  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
 }
 @media (max-width: 875px) {
   .slaider__gallery {
@@ -727,6 +734,11 @@ h1, h2, h3, h4, p {
   font-weight: 600;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media (max-width: 380px) {
+  .slaider__item_title {
+    font-size: 6rem;
+  }
 }
 
 .slaider__item {

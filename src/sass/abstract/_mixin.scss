@@ -1,71 +1,73 @@
+@use'../abstract/media' as m;
+
 @mixin desktop-big {
-  @media(max-width: $desktop-big) { @content; } 
+  @media(max-width: m.$desktop-big) { @content; } 
 };
 
 @mixin desktop-small {
-  @media(max-width: $desktop-small) { @content; } 
+  @media(max-width: m.$desktop-small) { @content; } 
 };
 
 @mixin tablet-big {
-  @media(max-width: $tablet-big) { @content; } 
+  @media(max-width: m.$tablet-big) { @content; } 
 };
 
 @mixin tablet-burger-menu {
-  @media (max-width: $tablet-burger-menu) {@content;}
+  @media (max-width: m.$tablet-burger-menu) {@content;}
 };
 
 @mixin tablet-small {
-  @media (max-width: $tablet-small) {@content;}
+  @media (max-width: m.$tablet-small) {@content;}
 };
 
 @mixin tablet-form {
-  @media (max-width: $tablet-form) {@content;}
+  @media (max-width: m.$tablet-form) {@content;}
 };
 
 @mixin tablet-samll-form {
-  @media (max-width: $tablet-samll-form) {@content;}
+  @media (max-width: m.$tablet-samll-form) {@content;}
 };
 
 @mixin tablet-small-slaider {
-  @media(max-width: $tablet-small-slaider) {@content;}
+  @media(max-width: m.$tablet-small-slaider) {@content;}
 };
 
 @mixin desktop-small-gallery {
-  @media (max-width: $desktop-small-gallery) {@content;}
+  @media (max-width: m.$desktop-small-gallery) {@content;}
 };
 
 @mixin mobale-big {
-  @media (max-width: $mobale-big) {@content;}
+  @media (max-width: m.$mobale-big) {@content;}
 };
 
 @mixin mobale-small {
-  @media (max-width: $mobale-small) {@content;}
+  @media (max-width: m.$mobale-small) {@content;}
 };
 
 @mixin tablet-gifts {
-  @media (max-width: $tablet-gifts) {@content;}
+  @media (max-width: m.$tablet-gifts) {@content;}
 };
 
 @mixin mobale-form {
-  @media (max-width: $mobale-form) {@content;}
+  @media (max-width: m.$mobale-form) {@content;}
 };
 
 @mixin mobale-form-big {
-  @media (max-width: $mobale-form-big) {@content;}
+  @media (max-width: m.$mobale-form-big) {@content;}
 };
 
 @mixin mob-form-big {
-  @media (max-width: $mob-form-big) {@content;}
+  @media (max-width: m.$mob-form-big) {@content;}
 };
 
 @mixin mobale-small-about {
-  @media (max-width: $mobale-small-about) {@content;}
+  @media (max-width: m.$mobale-small-about) {@content;}
 };
 
 @mixin mobale-small-form {
-  @media (max-width: $mobale-small-form) {@content;}
+  @media (max-width: m.$mobale-small-form) {@content;}
 };
 
 @mixin mobale {
-  @media (max-width: $mobale) {@content;}
+  @media (max-width: m.$mobale) {@content;}
 };

@@ -1,10 +1,13 @@
+@use '../abstract/constans' as c;
+@use '../abstract/mixin' as m;
+
 .best-gifts {
   padding: 37px 0px 0px 0px;
 };
 
 .best-gifts__title {
   margin-bottom: 20px;
-  color: $color-static;
+  color: c.$color-static;
   text-align: center;
 };
 
@@ -14,10 +17,10 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px 11px;
-  @include tablet-burger-menu {
+  @include m.tablet-burger-menu {
     gap: 25px 25px;
   };
-  @include mobale-small {
+  @include m.mobale-small {
     gap: 30px 0px;
   }
 };
@@ -25,15 +28,15 @@
 .best-gifts_itemn {
   max-width: 310px;
   padding: 0 0 20px 0;
-  background-color: $color-static;
+  background-color: c.$color-static;
   border-radius: 20px;
   
   cursor: pointer;
   transition: 0.5s ease-in-out;
-  @include tablet-burger-menu {
+  @include m.tablet-burger-menu {
     padding: 0 0 30px 0;
   };
-  @include mobale {
+  @include m.mobale {
     max-width: 270px;
   }
 };
@@ -42,7 +45,7 @@
   width: 310px;
   height: 230px;
   margin-bottom: 16px;
-  @include mobale {
+  @include m.mobale {
     width: 280px;
     height: 210px;
   }

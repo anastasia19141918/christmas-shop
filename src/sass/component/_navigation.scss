@@ -1,7 +1,8 @@
-
+@use '../abstract/constans' as c;
+@use '../abstract/mixin' as m;
 
 .header__nav {
-  @include tablet-burger-menu {
+  @include m.tablet-burger-menu {
     top: 0;
     left: 0;
     width: 100%;
@@ -10,7 +11,7 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    background-color: $color-static;
+    background-color: c.$color-static;
 
     opacity: 0;
     pointer-events: none;
@@ -28,7 +29,7 @@
   display: flex;
   flex-direction: row;
   gap: 0 35px;
-  @include tablet-burger-menu {
+  @include m.tablet-burger-menu {
     flex-direction: column;
     text-align: center;
     gap: 30px 0px;
@@ -43,7 +44,7 @@
 
 .itemn__link {
   text-transform: uppercase;
-  color: $color-main-backrgaund;
+  color: c.$color-main-backrgaund;
   font-family: 'Montserrat';
   font-size: 1.2rem;
   line-height: 130%;
@@ -51,7 +52,7 @@
   letter-spacing: 0.1rem;
 
   transition: 0.5s ease-in-out;
-  @include tablet-burger-menu {
+  @include m.tablet-burger-menu {
     font-size: 2.4rem;
   }
 }

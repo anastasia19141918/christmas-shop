@@ -1,7 +1,10 @@
+@use '../abstract/constans' as c;
+@use '../abstract/mixin' as m;
+
 .hero {
   padding: 120px 120px 130px 120px;
   background-image: url('../../src/img/hero/bg-ball.png'), url('../../src/img/hero/bg-snow.png');
-  @include mobale-big {
+  @include m.mobale-big {
     padding: 50px 50px 50px 50px;
   }
 };
@@ -23,11 +26,11 @@
   font-weight: 600;
   line-height: 150%;
   letter-spacing: 5.5px;
-  color: $color-static;
-  @include mobale-small {
+  color: c.$color-static;
+  @include m.mobale-small {
     max-width: 364px;
   }
-  @include mobale {
+  @include m.mobale {
     max-width: 350px;
     font-size: 2.8rem;
   }

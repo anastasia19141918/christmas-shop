@@ -1,7 +1,10 @@
+@use '../abstract/constans' as c;
+@use '../abstract/mixin' as m;
+
 .gifts {
   padding: 6% 0 2% 0;
-  background-color: $color-static;
-  @include mobale-small {
+  background-color: c.$color-static;
+  @include m.mobale-small {
     padding: 15% 0 2% 0;
   }
 };
@@ -11,12 +14,12 @@
   flex-direction: row;
   justify-content: center;
   gap: 0 15px;
-  @include desktop-small {
+  @include m.desktop-small {
     padding: 0 20px;
     flex-direction: column;
     gap: 15px 0px;
   };
-  @include tablet-burger-menu {
+  @include m.tablet-burger-menu {
     padding: 0 10px;
     text-align: center;
     align-items: center;
@@ -32,26 +35,26 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  background-color: hsla(0, 0%, 90%, 0.5);
+  background-color: c.$color-form-img;
   border-radius: 20px;
   cursor: pointer;
-  @include desktop-small {
+  @include m.desktop-small {
     width: calc(100% - 15%);
   };
-  @include tablet-burger-menu {
+  @include m.tablet-burger-menu {
     width: calc(100% - 17%);
   };
-  @include tablet-small {
+  @include m.tablet-small {
     width: calc(100% - 20%);
   };
-  @include tablet-gifts {
+  @include m.tablet-gifts {
     width: calc(100% - 35%);
   };
-  @include mobale-small {
+  @include m.mobale-small {
     width: calc(100% - 20%);
     padding: 26px 20px 19px 20px;
   };
-  @include mobale-small-about {
+  @include m.mobale-small-about {
     width: calc(100% - 25%);
   }
 };
@@ -65,11 +68,11 @@
   line-height: 152%;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: $color-main-backrgaund;
-  @include mobale-small-about {
+  color: c.$color-main-backrgaund;
+  @include m.mobale-small-about {
     font-size: 2.0rem;
   };
-  @include mobale-small-about {
+  @include m.mobale-small-about {
     font-size: 1.7rem;
   }
 };
@@ -81,5 +84,5 @@
   line-height: 152%;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: $color-main-backrgaund;
+  color: c.$color-main-backrgaund;
 }

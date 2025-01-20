@@ -1,75 +1,78 @@
+@use '../abstract/constans' as c;
+@use '../abstract/mixin' as m;
+
 .header__icon:hover {
-  background-color: hsla(195, 56%, 62%, 0.6);
+  background-color: c.$color-icon;
   transition: 0.5s ease-in-out;
   border-radius: 5px;
-  @include desktop-small {
+  @include m.desktop-small {
     background-color: transparent;
     border-radius: 0;
   }
 };
 
 .header__itemn:hover {
-  background-color: hsl(0, 100%, 95%);
+  background-color: c.$color-itemn;
   transition: 0.5s ease-in-out;
-  @include desktop-small {
+  @include m.desktop-small {
     background-color: transparent;
   }
 };
 
 .itemn__link:hover {
-  color: $color-main;
+  color: c.$color-main;
   transition: 0.5s ease-in-out;
-  @include desktop-small {
-    color: $color-main-backrgaund;
+  @include m.desktop-small {
+    color: c.$color-main-backrgaund;
   }
 };
 
 .header__itemn_gifts:hover {
-  @include desktop-small {
-    background-color: hsl(0, 100%, 95%);
+  @include m.desktop-small {
+    background-color: c.$color-itemn;
   }
 };
 
 .itemn__link_gifts:hover {
-  @include desktop-small {
-    color: $color-main;
+  @include m.desktop-small {
+    color: c.$color-main;
   }
 }
 
 .btn:hover {
-  background-color: $color-static;
+  background-color: c.$color-static;
   transition: 0.5s ease-in-out;
-  @include desktop-small {
-    background-color: $color-main-backrgaund;
+  @include m.desktop-small {
+    background-color: c.$color-main-backrgaund;
   }
 };
 
 .link:hover {
-  color: $color-main-backrgaund;
+  color: c.$color-main-backrgaund;
   transition: 0.5s ease-in-out;
-  @include desktop-small {
-    color: $color-static;
+  @include m.desktop-small {
+    color: c.$color-static;
   }
 };
 
 .slaider__dot:hover {
-  color: $color-main;
-  background-color: $color-static;
-  @include desktop-small {
-    color: hsla(195, 56%, 62%, 0.6);
+  color: c.$color-main;
+  background-color: c.$color-static;
+  @include m.desktop-small {
+    color: c.$color-icon;
     background-color: transparent;
   }
 };
 
 .best-gifts_itemn:hover {
-  color:$color-main;
+  color: c.$color-main;
   transition: 0.5s ease-in-out;
-  @include desktop-small {
-    color: $color-main-backrgaund;
+  @include m.desktop-small {
+    color: c.$color-main-backrgaund;
   }
 };
 
 .footer__link:hover {
   transition: 0.5s ease-in-out;
-  color: $color-main;
+  color: c.$color-main;
 }

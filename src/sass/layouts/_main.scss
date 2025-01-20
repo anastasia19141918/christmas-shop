@@ -1,11 +1,14 @@
+@use '../abstract/constans' as c;
+@use '../abstract/mixin' as m;
+
 .main {
   padding: 0 20px;
-  @include tablet-burger-menu {
+  @include m.tablet-burger-menu {
     padding: 0px 0px;
   }
 }
 
 .main__bacgraund {
-  background-color: $color-main;
+  background-color: c.$color-main;
   border-radius: 20px;
 };

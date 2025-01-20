@@ -1,3 +1,6 @@
+@use '../abstract/constans' as c;
+@use '../abstract/mixin' as m;
+
 .text {
   margin: 0 0 10px 0;
   text-align: center;
@@ -5,7 +8,7 @@
   font-size: 2.4rem;
   line-height: 100%;
   letter-spacing: 1.2px;
-  color: $color-static;
+  color: c.$color-static;
 }; 
 
 .text__section {
@@ -15,10 +18,10 @@
   line-height: 152%;
   letter-spacing: 4px;
   text-transform: uppercase;
-  @include mobale-small-about {
+  @include m.mobale-small-about {
     font-size: 2.0rem;
   };
-  @include mobale {
+  @include m.mobale {
     font-size: 1.8rem;
   }
 }

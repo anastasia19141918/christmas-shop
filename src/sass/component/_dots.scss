@@ -1,6 +1,9 @@
+@use '../abstract/constans' as c;
+@use '../abstract/mixin' as m;
+
 .wrapper__dots {
   padding-right: 5.5%;
-  @include  tablet-burger-menu {
+  @include  m.tablet-burger-menu {
     padding-right: 1%;
   }
 }
@@ -20,9 +23,9 @@
   text-align: center;
   align-items: center;
 
-  border: 1px solid hsla(195, 56%, 62%, 0.6);
+  border: 1px solid c.$color-icon;
   border-radius: 20px;
-  color: hsla(195, 56%, 62%, 0.6);
+  color: c.$color-icon;
   font-size: 3.0rem;
   font-weight: 600;
   
@@ -30,6 +33,3 @@
   transition: 0.5s ease-in-out;
 };
 
-.text__section {
-  
-}

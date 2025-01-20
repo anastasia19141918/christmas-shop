@@ -1,5 +1,8 @@
+@use '../abstract/constans' as c;
+@use '../abstract/mixin' as m;
+
 .wrapper {
-  max-width: $width-wrapper;
+  max-width: c.$width-wrapper;
   margin: auto;
 };
 

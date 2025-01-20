@@ -1,30 +1,29 @@
-@import'./normalize.css';
+@use'./normalize.css';
 
-@import'abstract/constans';
-@import'abstract/mixin';
-@import'abstract/fonts';
-@import'abstract/interactive';
+@use'abstract/constans';
+@use'abstract/fonts';
+@use'abstract/interactive';
 
-@import'base/base';
-@import'base/tags';
-@import'base/button';
+@use'base/base';
+@use'base/tags';
+@use'base/button';
 
 
-@import'layouts/wrapper';
-@import'layouts/header';
-@import'layouts/main';
-@import'layouts/footer';
+@use'layouts/wrapper';
+@use'layouts/header';
+@use'layouts/main';
+@use'layouts/footer';
 
-@import'component/text';
-@import'component/navigation';
-@import'component/hero';
-@import'component/about';
-@import'component/slaider';
-@import'component/dots';
-@import'component/best-gifts';
-@import'component/gta';
-@import'component/gifts';
-@import'component/gallery';
-@import'component/burger-menu';
-@import'component/form';
+@use'component/text';
+@use'component/navigation';
+@use'component/hero';
+@use'component/about';
+@use'component/slaider';
+@use'component/dots';
+@use'component/best-gifts';
+@use'component/gta';
+@use'component/gifts';
+@use'component/gallery';
+@use'component/burger-menu';
+@use'component/form';
 

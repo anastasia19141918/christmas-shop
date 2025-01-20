@@ -1,9 +1,12 @@
+@use '../abstract/constans' as c;
+@use '../abstract/mixin' as m;
+
 .gifts-galley {
   padding: 4.2% 0;
-  @include tablet-burger-menu {
+  @include m.tablet-burger-menu {
     padding: 8% 0 4% 0;
   };
-  @include mobale-small {
+  @include m.mobale-small {
     padding: 16% 0 13% 0;
   }
 }
@@ -23,15 +26,15 @@
   display: flex;
   flex-direction: row;
   gap: 0 9px;
-  @include tablet-gifts {
+  @include m.tablet-gifts {
     padding: 0 10px;
   };
-  @include mobale-small {
+  @include m.mobale-small {
     gap: 0 4px;
     text-align: center;
     align-items: center;
   };
-  @include mobale-small-about {
+  @include m.mobale-small-about {
     gap: 0 2px;
   }
 };
@@ -45,20 +48,20 @@
   line-height: 130%;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: $color-static;
+  color: c.$color-static;
   transition:  0.5s ease-in-out;
   cursor: pointer;
-  @include tablet-gifts {
+  @include m.tablet-gifts {
     padding: 8px 4px;
   };
-  @include mobale-small {
+  @include m.mobale-small {
     padding: 8px 10px;
     font-size: 1.0rem;
   }
 };
 
 .gifts-galley_btn_active {
-  background-color: hsla(0, 0%, 80%, 0.5);
+  background-color: c.$color-form-img;
   transition:  0.5s ease-in-out;
 };
 
@@ -73,7 +76,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 35px 10px;
-  @include tablet-burger-menu {
+  @include m.tablet-burger-menu {
     gap: 25px 20px;
   }
 };
@@ -90,23 +93,23 @@
   right: 6%;
 	top: 20%;
   transition: all .3s ease-in-out;
-  @include tablet-burger-menu {
+  @include m.tablet-burger-menu {
     display: block;
     opacity: 0;
   };
-  @include tablet-form {
+  @include m.tablet-form {
     right: 15%;
     top: 10.5%;
   };
-  @include mobale-form-big {
+  @include m.mobale-form-big {
     right: 11%;
     top: 11%;
   };
-  @include mobale-big {
+  @include m.mobale-big {
     right: 11%;
     top: 10%;
   };
-  @include mobale-small {
+  @include m.mobale-small {
     right: 13%;
     top: 10.6%;
   }
@@ -122,11 +125,11 @@
   width: 34px;
   height: 34px;
   background-image: url('../../src/img/gallery/arrow-up.png');
-  background-color: $color-static;
+  background-color: c.$color-static;
   background-size: 34px 34px;
   background-repeat: no-repeat;
   border-radius: 50%;
-  border: 2px solid $color-main;
+  border: 2px solid c.$color-main;
 
   cursor: pointer;
 }

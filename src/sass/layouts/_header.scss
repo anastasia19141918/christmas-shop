@@ -1,6 +1,10 @@
+@use '../abstract/constans' as c;
+@use '../abstract/mixin' as m;
+
+
 .header {
   padding: 15px 0px;
-  background-color: $color-static;
+  background-color: c.$color-static;
 };
 
 .header__wrapper {
@@ -9,10 +13,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  @include desktop-small {
+  @include m.desktop-small {
     padding: 0 4rem;
   };
- @include tablet-burger-menu {
+ @include m.tablet-burger-menu {
     padding: 0 2rem;
  }
 };
@@ -31,7 +35,7 @@
 
 .header__link {
   text-transform: uppercase;
-  color: $color-main-backrgaund;
+  color: c.$color-main-backrgaund;
   font-family: 'Montserrat';
   font-size: 1.2rem;
   line-height: 152%;
@@ -42,7 +46,7 @@
 //heder gifts
 
 .header__itemn_gifts {
-  background-color: hsl(0, 100%, 95%);
+  background-color: c.$color-itemn;
 };
 
 .itemn__link_gifts {
@@ -52,8 +56,8 @@
   line-height: 152%;
   font-weight: 400;
   letter-spacing: 0.6px;
-  color: $color-main;
-  @include tablet-burger-menu {
+  color: c.$color-main;
+  @include m.tablet-burger-menu {
     font-size: 2.4rem;
   }
 }

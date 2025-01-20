@@ -1,3 +1,6 @@
+@use '../abstract/constans' as c;
+@use '../abstract/mixin' as m;
+
 html {
   font-size: 10px;
   scroll-behavior: smooth
@@ -36,13 +39,13 @@ h1, h2, h3, h4, p {
   letter-spacing: 0.6px;
   text-transform: uppercase;
   &_work {
-    color: $color-tag-purple;
+    color: c.$color-tag-purple;
   };
   &_health {
-    color: $color-tag-green;
+    color: c.$color-tag-green;
   };
   &_harmony {
-    color: $color-tag-pink;
+    color: c.$color-tag-pink;
   }
 };
 

@@ -1,3 +1,6 @@
+@use '../abstract/constans' as c;
+@use '../abstract/mixin' as m;
+
 .slaider {
   padding: 80px 0px
 };
@@ -12,7 +15,7 @@
 
 .slaider__text {
   margin-bottom: 20px;
-  color: $color-static;
+  color: c.$color-static;
 };
 
 .slaids {
@@ -31,11 +34,11 @@
   transition: transform 0.5s ease-in-out;
 
   
-  @include desktop-small-gallery {
+  @include m.desktop-small-gallery {
     padding: 0 0 0 0%;
     gap: 0 5px;
   };
-  @include  tablet-burger-menu {
+  @include  m.tablet-burger-menu {
     padding: 0 0 0 1%;
     gap: 0 5px;
   }
@@ -48,8 +51,8 @@
   font-size: 8.0rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: $color-static;
-  @include mobale-small {
+  color: c.$color-static;
+  @include m.mobale-small {
     font-size: 6.0rem;
   }
 };
@@ -60,19 +63,19 @@
   text-align: center;
   align-items: center;
   gap: 0px 15px;
-  @include desktop-small-gallery {
+  @include m.desktop-small-gallery {
     gap: 0 5px;
   };
-  @include  tablet-burger-menu {
+  @include  m.tablet-burger-menu {
     gap: 0 20px;
   };
-  @include tablet-small-slaider {
+  @include m.tablet-small-slaider {
     gap: 0 2px;
   };
-  @include mobale-small {
+  @include m.mobale-small {
     gap: 0 22px;
   };
-  @include mobale-small-about {
+  @include m.mobale-small-about {
     gap: 0 5px;
   }
 };

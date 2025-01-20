@@ -1,6 +1,9 @@
+@use '../abstract/constans' as c;
+@use '../abstract/mixin' as m;
+
 .about {
   padding: 40px 0px;
-  @include mobale-small {
+  @include m.mobale-small {
     padding: 140px 0px 50px 0px;
   }
 }
@@ -11,12 +14,13 @@
   flex-direction: row;
   justify-content: center;
   gap: 0px 0px;
-  @include tablet-small {
+  @include m.tablet-small {
     flex-direction: column;
     align-items: center;
     text-align: center
   }
 };
+
 
 .about__desk {
   position: relative;
@@ -26,19 +30,19 @@
   justify-content: flex-start;
   padding: 11% 60px 85px 60px;
   
-  background-color: $color-static;
+  background-color: c.$color-static;
   border-radius: 20px;
 
-  @include desktop-big {
+  @include m.desktop-big {
     max-width: 376px;
   };
-  @include tablet-big {
+  @include m.tablet-big {
     max-width: 350px;
   };
-  @include tablet-small {
+  @include m.tablet-small {
     padding: 9% 10px 85px 10px;
   };
-  @include mobale-small-about {
+  @include m.mobale-small-about {
     max-width: 290px;
     padding: 9% 5px 85px 5px;
   }
@@ -52,23 +56,23 @@
 .text_about {
   text-align: left;
   margin-bottom: 20px;
-  color: $color-main;
+  color: c.$color-main;
 
 };
 
 .about__title {
   margin-bottom: 20px;
-  @include desktop-big {
+  @include m.desktop-big {
     max-width: 256px;
   };
-  @include mobale-small {
+  @include m.mobale-small {
     max-width: 324px;
     text-align: left;
   };
-  @include mobale-small-about {
+  @include m.mobale-small-about {
     max-width: 270px;
   };
-  @include mobale {
+  @include m.mobale {
     max-width: 240px;
   }
 };
@@ -80,32 +84,32 @@
   font-weight: normal;
   line-height: 148%;
   letter-spacing: 0.6px;
-  @include desktop-big {
+  @include m.desktop-big {
     max-width: 256px;
   };
-  @include tablet-big {
+  @include m.tablet-big {
     max-width: 220px;
     line-height: 148%;
     letter-spacing: 1px;
   };
-  @include tablet-small {
+  @include m.tablet-small {
     max-width: 324px;
   };
-  @include mobale-small {
+  @include m.mobale-small {
     text-align: left;
   };
-  @include mobale-small-about {
+  @include m.mobale-small-about {
     max-width: 290px;
     font-size: 1.4rem;
   };
-  @include mobale {
+  @include m.mobale {
     max-width: 260px;
     font-size: 1.2rem;
   }
 };
 
 .about__img {
-  @include tablet-small {
+  @include m.tablet-small {
     z-index: 10;
     margin-top: -20px;
   }
@@ -114,21 +118,21 @@
 .about__pic {
   border-radius: 20px;
   object-fit: cover;
-  @include desktop-big {
+  @include m.desktop-big {
     max-width: 376px;
     height: 528px;
   };
-  @include tablet-big {
+  @include m.tablet-big {
     max-width: 350px;
     height: 518px;
   }
-  @include tablet-small {
+  @include m.tablet-small {
     max-width: 345px;
   };
-  @include mobale-small-about {
+  @include m.mobale-small-about {
     max-width: 300px;
   };
-  @include mobale {
+  @include m.mobale {
     max-width: 280px;
   }
 };

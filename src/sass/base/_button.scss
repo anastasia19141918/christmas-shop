@@ -1,3 +1,6 @@
+@use '../abstract/constans' as c;
+@use '../abstract/mixin' as m;
+
 .button {
   margin: 0 0 15px 0;
 };
@@ -8,7 +11,7 @@
   border-radius: 20px;
 
   border: none;
-  background-color: $color-main-backrgaund;
+  background-color: c.$color-main-backrgaund;
 
   text-transform: uppercase;
   font-family: 'Montserrat';
@@ -22,6 +25,6 @@
 };
 
 .link {
-  color: $color-static;
+  color: c.$color-static;
   transition: 0.5s ease-in-out;
 }

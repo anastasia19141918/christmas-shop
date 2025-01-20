@@ -1,13 +1,16 @@
+@use '../abstract/constans' as c;
+@use '../abstract/mixin' as m;
+
 .gta {
   padding: 16.5% 0px 10% 0px;
   background-image: url('../../src/img/CTA/bg-forest.png'), url('../../src/img/hero/bg-snow.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  @include tablet-burger-menu {
+  @include m.tablet-burger-menu {
     padding: 31% 0px 26% 0px;
   };
-  @include mobale-small {
+  @include m.mobale-small {
     padding: 60% 3% 50% 3%;
   }
 };
@@ -21,11 +24,11 @@
   max-width: 426px;
   margin-bottom: 20px;
   text-align: center;
-  color: $color-static;
-  @include tablet-burger-menu {
+  color: c.$color-static;
+  @include m.tablet-burger-menu {
     letter-spacing: 3.5px;
   };
-  @include mobale-small {
+  @include m.mobale-small {
     max-width: 426px;
   }
 };
@@ -38,7 +41,7 @@
 };
 
 .gta__text {
-  @include tablet-burger-menu {
+  @include m.tablet-burger-menu {
     margin: 0 0 5px 0;
   }
 }
@@ -48,7 +51,7 @@
 .gta__timer_container {
   display: flex;
   justify-content: center;
-  @include mobale-small-about {
+  @include m.mobale-small-about {
     padding: 0px 10px;
   }
 };
@@ -59,18 +62,18 @@
   padding: 5px 30px;
   justify-content: center;
   gap: 0 10px;
-  background-color: hsl(0, 0%, 80%, 0.5);
+  background-color: c.$color-form-img;
   border-radius: 20px;
-  @include mobale-small-about {
+  @include m.mobale-small-about {
     padding: 5px 10px;
   };
-  @include mobale {
+  @include m.mobale {
     padding: 5px 5px;
   }
 };
 
 .text__section_time {
-  color: $color-static;
+  color: c.$color-static;
 };
 
 .gta__time {
@@ -85,5 +88,5 @@
   width: 1px;
   height: 20px;
   margin: 20px 0px 0px 0px;
-  background-color: hsl(0, 0%, 80%, 0.8);
+  background-color: c.$color-form-img;
 };
